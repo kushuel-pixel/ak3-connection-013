@@ -1,0 +1,1 @@
+Entry criteria and scoped path obstructions for AK(3) and explicit trivializable families

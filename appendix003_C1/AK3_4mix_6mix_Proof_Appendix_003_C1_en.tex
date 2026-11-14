@@ -1,0 +1,560 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm,headheight=14pt]{geometry}
+\usepackage[T1]{fontenc}
+\pdfmapfile{+lm.map}
+\pdfmapfile{+cm.map}
+\pdfmapfile{+symbols.map}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,longtable,array,microtype}
+\usepackage{xcolor,fancyhdr,enumitem,float}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black]{hyperref}
+\hypersetup{pdftitle={Four-mix lower bound and six-mix placement constraints},pdfsubject={English proof appendix 003-C1; independent AI review 004 and correction record}}
+\definecolor{ink}{RGB}{28,45,66}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small AK(3) connection programme}
+\fancyhead[R]{\small Proof appendix 003-C1 / 13 November 2026}
+\fancyfoot[C]{\small\thepage}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{1em}
+\setlist{nosep,leftmargin=1.6em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{maintheorem}{Theorem}
+\renewcommand{\themaintheorem}{\Alph{maintheorem}}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\NF}{\operatorname{NF}}
+\newcommand{\red}{\operatorname{red}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\F}{\mathsf F}
+\newcommand{\Q}{\mathsf Q}
+\newcommand{\word}[1]{\texttt{#1}}
+\newcommand{\pathfile}[1]{\nolinkurl{#1}}
+\begin{document}
+\begin{center}
+{\Large\bfseries\color{ink} Four-mix lower bound and six-mix placement constraints}\\[7pt]
+{\large English proof appendix to the AK(3) connection submission}\\[6pt]
+{Version 003-C1 \quad 13 November 2026}
+\end{center}
+
+\textbf{Purpose and status.} This appendix supplies readable proofs and finite-certificate interfaces for two scoped results about paths from the fixed pair $S$ to $E_0$. The four-mix result gives a lower bound of $24$ atomic moves. The six-mix result leaves $16$ possible placements, together with necessary inversion and conjugation budgets. The results use no total-word-length cap.
+
+The mathematical inputs were accepted in earlier independent AI reviews, including the fixed submission review 002. The English consolidation and its data were separately examined in independent AI review 004. This version 003-C1 corrects two typeset command spaces identified in that review; the mathematical text and data are unchanged. The final decision and post-correction check are in the accompanying review record. The finite computations are ordinary exact computations, not new Lean theorems. The preserved full $B_{15}$ scanner replay accompanies this version.
+
+\begin{maintheorem}[Four-mix bound]\label{thm:four}
+Every path from $S$ to $E_0$ in the $14$-move convention of Section~\ref{sec:model}, containing exactly four mix moves, has length at least $24$.
+\end{maintheorem}
+
+\begin{maintheorem}[Six-mix necessary conditions]\label{thm:six}
+Every path from $S$ to $E_0$ containing exactly six mix moves has one of the $16$ layouts in Table~\ref{tab:six}. Its normalized signed elementary-matrix product is $I$ or $-I$. The $I$ case has even inversion counts on both rows; the $-I$ case has odd counts on both rows. For a path of length at most $23$, the $-I$ case has at most $15$ single-letter conjugation moves.
+\end{maintheorem}
+
+Neither theorem asserts a path from $S$ to an exit family. Theorem~\ref{thm:four} concerns \emph{exactly four} mix moves; it does not exclude all paths of length at most $23$. Theorem~\ref{thm:six} is a necessary-condition classification, not an exclusion of all six-mix paths. Paths with eight or more mix moves are outside both statements.
+
+\newpage
+\begingroup\small\setlength{\parskip}{0pt}\tableofcontents\endgroup
+\newpage
+\section{Fixed model and notation}\label{sec:model}
+Work in the free group $F(x,y)$, with $X=x^{-1}$ and $Y=y^{-1}$. A state is an ordered pair of freely reduced words. Fix the endpoints
+\begin{align*}
+ S=(a_0,b_0)&=(Xy^3xY^4,\ x^2Y^5Xy^5),\\
+ E_0=(c_0,d_0)&=(Y,\ x^2YXy).
+\end{align*}
+Their literal encodings are
+\[
+S=(\word{XyyyxYYYY},\word{xxYYYYYXyyyyy}),\qquad
+E_0=(\word{Y},\word{xxYXy}).
+\]
+For a word $w$, let $|w|$ be its reduced length, and let $\cl(w)$ be the length of a cyclically reduced conjugate. Thus the endpoint cyclic lengths are $(9,13)$ and $(1,5)$. All four endpoint words are cyclically reduced.
+
+Each row of Table~\ref{tab:moves} is one atomic move, followed by free reduction. There is no swap move and no free conjugation by an arbitrary word. A conjugation by a word of length $k$ requires $k$ single-letter conjugation moves in the direct implementation. All counts in this appendix refer to this convention.
+
+\begin{table}[H]\centering
+\caption{The fixed $14$ atomic moves on $(r,s)$.}\label{tab:moves}
+\begin{tabular}{clcl}\toprule
+ID & Result & ID & Result\\\midrule
+0 & $(r^{-1},s)$ & 1 & $(r,s^{-1})$\\
+2 & $(rs,s)$ & 3 & $(rs^{-1},s)$\\
+4 & $(r,sr)$ & 5 & $(r,sr^{-1})$\\
+6 & $(xrX,s)$ & 7 & $(Xrx,s)$\\
+8 & $(yrY,s)$ & 9 & $(Yry,s)$\\
+10 & $(r,xsX)$ & 11 & $(r,Xsx)$\\
+12 & $(r,ysY)$ & 13 & $(r,Ysy)$\\\bottomrule
+\end{tabular}
+\end{table}
+
+IDs $2,3$ are first-row mixes, denoted $\F$; IDs $4,5$ are second-row mixes, denoted $\Q$. A \emph{layout} records only these letters in chronological order, deleting all nonmix moves. Nonmix gaps may contain arbitrarily many row inversions and single-letter conjugations.
+
+Let $e(w)=(e_x(w),e_y(w))$ be the exponent-sum row vector. The endpoint exponent matrices agree:
+\[
+ V=\begin{pmatrix}e(a_0)\\e(b_0)\end{pmatrix}
+  =\begin{pmatrix}e(c_0)\\e(d_0)\end{pmatrix}
+  =\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad \det V=1.
+\]
+We also use the character $\chi(w)=e_x(w)-e_y(w)$. Every endpoint relator has $\chi=1$.
+
+\section{Signed matrix projection}\label{sec:matrix}
+For $s\in\{1,-1\}$, put
+\[
+ T_\F(s)=\begin{pmatrix}1&s\\0&1\end{pmatrix},\qquad
+ T_\Q(s)=\begin{pmatrix}1&0\\s&1\end{pmatrix}.
+\]
+The exponent matrix is updated by left multiplication. Consequently the matrix of the last chronological move occurs at the left of a product.
+
+\begin{lemma}[Pushing inversion signs]\label{lem:push}
+Let $D=\diag(u,v)$, where $u,v\in\{1,-1\}$. For $K\in\{\F,\Q\}$,
+\[
+ T_K(s)D=D T_K(suv).
+\]
+The exponent projection of a path with $m$ mixes therefore has the form
+\[
+ D_{\rm tot}\,P\,V=V,\qquad
+ P=T_{K_m}(s_m)\cdots T_{K_1}(s_1),
+\]
+where the $s_i$ are normalized signs and $D_{\rm tot}$ records the parity of the original inversions on each row. Necessarily $D_{\rm tot}=P=I$ or $D_{\rm tot}=P=-I$.
+\end{lemma}
+\begin{proof}
+The displayed identity follows by multiplication. A conjugation acts trivially on exponent sums, and an inversion acts by one diagonal sign change. Repeatedly apply the identity to move every diagonal factor leftwards, absorbing its two row signs into the sign of each crossed mix. Since $V$ is invertible, $D_{\rm tot}P=I$. Every elementary mix has determinant one, so $\det D_{\rm tot}=1$. A diagonal sign matrix with determinant one is $I$ or $-I$, and each is its own inverse. Hence $P=D_{\rm tot}$.
+\end{proof}
+
+This is a projection of the given path. It is not a replacement of the path by a shorter sequence and does not make any nonmix move free. In particular, a normalized sign need not be the sign of the corresponding original mix ID.
+
+\begin{lemma}[Four-mix inventory]\label{lem:fourmatrix}
+The only four-letter layouts for which some normalized signs give $P=\pm I$ are those in Table~\ref{tab:four}. None gives $-I$.
+\end{lemma}
+\begin{proof}
+For each of the $2^4=16$ layouts and each of the $2^4=16$ sign choices, multiply the four displayed $2\times2$ integer matrices, in the prescribed order. Table~\ref{tab:four} lists the nonzero counts. The per-layout inventory and every admissible sign choice are recorded in \pathfile{data/matrix_profiles.json}; \pathfile{checkers/check_appendix.py} regenerates every product from the definitions. This finite calculation requires no bound on nonmix gaps.
+\end{proof}
+
+\begin{table}[H]\centering
+\caption{Four-mix matrix-viable layouts. All other ten layouts have zero profiles.}\label{tab:four}
+\begin{tabular}{lrrl}\toprule
+Layout & $P=I$ & $P=-I$ & Subsequent obstruction\\\midrule
+\word{FFFF} &6&0& Untouched second row\\
+\word{FFQQ} &4&0& Quotient killing $b_0$\\
+\word{FQQF} &4&0& Common-word gate and central certificate\\
+\word{QFFQ} &4&0& Common-word gate and central certificate\\
+\word{QQFF} &4&0& Quotient killing $a_0$\\
+\word{QQQQ} &6&0& Untouched first row\\\midrule
+Total &28&0&\\\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Placements excluded without a length bound}\label{sec:quotients}
+\begin{lemma}[Untouched row]\label{lem:untouched}
+No path from $S$ to $E_0$ has a layout consisting entirely of $\F$'s or entirely of $\Q$'s, regardless of the number of nonmix moves.
+\end{lemma}
+\begin{proof}
+A row never receiving a mix changes only by conjugation and inversion. These preserve cyclic length. In the all-$\F$ case its cyclic length would have to change from $13$ to $5$, and in the all-$\Q$ case from $9$ to $1$.
+\end{proof}
+
+\begin{lemma}[Two monotone blocks]\label{lem:blocks}
+For positive integers $r,s$, neither $\F^r\Q^s$ nor $\Q^r\F^s$ is the layout of a path from $S$ to $E_0$.
+\end{lemma}
+\begin{proof}
+Consider first $\F^r\Q^s$ and pass to the quotient killing $b_0$. During the first block the second row is a conjugate or inverse of $b_0$, hence trivial in this quotient. Mixes in that block therefore leave the first row unchanged in the quotient. During the second block no mix changes the first row. Thus $a_0$ and $c_0$ would be conjugate up to inversion in every group image killing $b_0$.
+
+Use permutations on $\{0,\ldots,9\}$, composed rightmost first:
+\[
+ x=(0\ 1\ 2)(5\ 7\ 6),\qquad
+ y=(0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9).
+\]
+Here $y^{-5}xy^5=x^{-1}=x^2$, so $b_0=x^2y^{-5}x^{-1}y^5$ maps to the identity. The image of $a_0$ has cycle type $(8,1,1)$ and that of $c_0=Y$ has type $(10)$. Inversion does not change cycle type. This excludes $\F^r\Q^s$.
+
+For $\Q^r\F^s$, kill $a_0$ instead. The quotient has the HNN presentation
+\[
+ G=\langle x,y\mid x^{-1}y^3x=y^4\rangle=\operatorname{BS}(3,4).
+\]
+The same block argument would make $b_0$ and $d_0$ conjugate up to inversion. The stable exponent $e_x$ is one for both, so conjugacy to the inverse is impossible. It remains to exclude conjugacy with the same orientation.
+
+Both words are cyclically Britton reduced with stable-letter signs $++-$. In the normal-form convention ending in a stable letter, use their cyclic conjugates
+\[
+ B=y^5b_0y^{-5}=y^5xx y^{-5}X,\qquad
+ D=yd_0y^{-1}=yxx y^{-1}X.
+\]
+The nonbase cyclic conjugacy criterion for an HNN extension reduces a possible conjugacy to a cyclic permutation of the stable-letter syllables, followed by a conjugator in an associated subgroup of the base group; see \cite[Theorem 3.9]{BMR}. Of the three rotations of $++-$, only the original one has the sign sequence $++-$ of $D$. It is enough to rule out
+\[
+ D=y^sBy^{-s}\quad(s\in\mathbb Z).
+\]
+Allowing all base powers only enlarges the permissible associated-subgroup conjugators. Transferring back to $b_0,d_0$ gives
+\[
+ d_0=y^{s+4}b_0y^{-s-4}.
+\]
+The shift is $s+4$, not $s$: both cyclic conjugations must be included.
+
+For an arbitrary integer $r$, form
+\[
+ W(r)=d_0^{-1}y^rb_0y^{-r}
+     =YxyXXy^rxx y^{-5}Xy^{5-r}.
+\]
+The Britton pinches are $Xy^{3k}x$ and $xy^{4k}X$. If $W(r)=1$, its only initially possible pinch forces $3\mid r$. Writing $r=3k$ and reducing the central pinch gives
+\[
+ W(3k)=YxyXy^{4k}xy^{-5}Xy^{5-3k}.
+\]
+The next pinch forces $3\mid k$. Set $r=9j$. The remaining reduction is
+\[
+ W(9j)=Yxy^{16j-4}Xy^{5-9j}=y^{3j+1}\ne1.
+\]
+The base infinite cyclic group embeds in the HNN extension by Britton's lemma \cite[Theorem 2.1]{BMR}; no integer $j$ satisfies $3j+1=0$. This contradiction proves the second exclusion.
+\end{proof}
+
+The HNN argument uses the nonbase cyclic conjugacy criterion, not any genericity or regular-element hypothesis from later parts of \cite{BMR}. Its pinches have been stated directly from the relation $Xy^3x=y^4$ to fix all convention choices.
+
+\section{Reducing the two remaining four-mix layouts}\label{sec:gate}
+\subsection{Normalized common products}
+For the finite calculations use the cyclic representatives
+\begin{align*}
+ a&=\word{XyyyxYYYY},& b&=\word{XyyyyyxxYYYYY},\\
+ c&=\word{Y},& d&=\word{XyxxY}.
+\end{align*}
+Here $a=a_0$, $c=c_0$, and $b,d$ are cyclic conjugates of $b_0,d_0$. Their lengths are $9,13,1,5$.
+
+\begin{definition}[Oriented canonical class]
+For a word $w$, $\NF(w)$ is obtained by free reduction, cyclic reduction, and selection of the lexicographically least cyclic rotation, using the alphabet order $X<Y<x<y$. The empty word is allowed. Inverse classes are \emph{not} identified. Two words have the same $\NF$ exactly when they are conjugate with the same orientation in the free group.
+\end{definition}
+
+For $\sigma\in\{1,-1\}$ and $N\ge0$, define
+\[
+\mathcal G_\sigma(N)=
+\left\{\begin{array}{l|l}
+U & U=\NF(aub^\sigma u^{-1})=\NF(cvd^\sigma v^{-1}),\\[-2pt]
+  & u,v\in F(x,y),\quad |U|\le N
+\end{array}\right\}.
+\]
+There is no witness-length restriction in this definition.
+
+\begin{lemma}[All-sign reduction]\label{lem:signs}
+For either layout $\F\Q\Q\F$ or $\Q\F\F\Q$, the outer row after the first mix, followed through the central two mixes, determines a common class in $\mathcal G_+(N)$ or $\mathcal G_-(N)$ of the same cyclic length $N$. In the $\Q$ layout the negative branch uses the inverse of the corresponding $\F$ class, which has the same normal closure.
+\end{lemma}
+\begin{proof}
+Before a first-row mix, the two rows are $p a_0^\epsilon p^{-1}$ and $q b_0^\delta q^{-1}$ for signs $\epsilon,\delta\in\{1,-1\}$. Absorb the sign of the mix into $\delta$, and conjugate by $p^{-1}$. The product is
+\[
+ a_0^\epsilon u b_0^\delta u^{-1},\qquad u=p^{-1}q.
+\]
+If $\epsilon=1$, it has the required form with $\sigma=\delta$. If $\epsilon=-1$, invert the product and conjugate by $a_0$:
+\[
+ a_0(a_0^{-1}u b_0^{-\sigma}u^{-1})^{-1}a_0^{-1}
+ =a_0u b_0^\sigma u^{-1}.
+\]
+Thus a conjugate or inverse has the required form for $\sigma=\epsilon\delta$. Replacing factors by fixed cyclic conjugates changes $u$ bijectively and does not change the set of classes.
+
+Apply the same argument backwards from $E_0$ at the last outer mix. The central two mixes change the other row; the outer row can change only by conjugation and inversion between the two cuts. Its normalized exponent vector is $e(a)+\sigma e(b)$, equal at the two endpoints. The vectors for the two branches are $(1,-1)$ and $(-1,-1)$; they are neither equal nor negatives of one another. Neither vector is zero. Therefore the branch agrees at both cuts, and the normalized orientations agree. This gives a common oriented class for the $\F$ layout.
+
+For the $\Q$ layout use the following identities, with $u\mapsto u^{-1}$. In the positive branch,
+\[
+ (bu^{-1})(aub u^{-1})(bu^{-1})^{-1}=bu^{-1}au.
+\]
+In the negative branch,
+\[
+ u^{-1}(aub^{-1}u^{-1})^{-1}u=bu^{-1}a^{-1}u.
+\]
+These are precisely the normalized $\Q$ products. Inversion preserves cyclic length and normal closure. The same identities hold for $c,d$.
+\end{proof}
+
+This reduction changes the chosen witness. No assertion is made that it preserves the witness length or the move cost. The cost estimate below is applied to the original path before witness shortening.
+
+\subsection{Cost of the original path}
+\begin{lemma}[Common-word budget]\label{lem:cost}
+If a path with layout $\F\Q\Q\F$ or $\Q\F\F\Q$ has total length $L$, its common cyclic length satisfies
+\[
+ N\le L+10,\qquad N\ \hbox{is even}.
+\]
+In particular, $L\le23$ implies $N\le32$.
+\end{lemma}
+\begin{proof}
+Let $c_1$ count single-letter conjugations before the first mix, on either row. Inversions preserve reduced length; each single-letter conjugation increases the sum of the two reduced row lengths by at most two. Starting from total length $22$, the cyclic length of the first mixed row therefore satisfies $N\le22+2c_1$.
+
+Let $c_2$ count such conjugations after the last mix, viewed as a backwards prefix from $E_0$. The reversed last mix is again an allowed mix. Starting from total length $6$ gives $N\le6+2c_2$. The middle outer row is preserved up to conjugation and inversion, so the same $N$ occurs in both inequalities. Since the four mixes already cost four moves, $c_1+c_2\le L-4$. Adding yields
+\[
+2N\le28+2(c_1+c_2)\le28+2(L-4)=2L+20.
+\]
+Every endpoint relator has odd length. Before the first mix, conjugation, inversion, and free reduction preserve length parity on each row. Mixing two odd-length rows gives even length, and cyclic reduction deletes pairs of letters. Thus $N$ is even. If $L\le23$, then $N\le33$ and evenness improves this to $N\le32$.
+\end{proof}
+
+\section{Why a finite witness ball is complete}\label{sec:shortening}
+\begin{lemma}[Witness shortening]\label{lem:shorten}
+Let $g,h$ be nontrivial cyclically reduced words of lengths $p,q$, and let
+\[
+ N=\cl(gzhz^{-1}).
+\]
+There are integers $k,l$ such that $z'=\red(g^kzh^l)$ satisfies
+\[
+ |z'|\le\left\lfloor\frac p2\right\rfloor+
+           \left\lfloor\frac q2\right\rfloor+
+           \max\left(0,\frac{N-p-q}{2}\right),
+\]
+and $gz'hz'^{-1}$ is conjugate to $gzhz^{-1}$ with the same orientation.
+\end{lemma}
+\begin{proof}
+Use the simplicial Cayley tree, with unit edge lengths and the left action of the free group. The axes $A_g,A_h$ contain the identity because $g,h$ are cyclically reduced. Let $\delta$ be the distance between $A_g$ and $zA_h$; when they intersect, choose a common vertex, and otherwise let $P,Q$ be the endpoints of their shortest bridge.
+
+An integral power of $g$ brings $P$ within distance $\lfloor p/2\rfloor$ of the identity along $A_g$. Independently, an integral power of $h$ brings the vertex $zh^l$ within distance $\lfloor q/2\rfloor$ of $Q$ along $zA_h$. After the chosen left translation by $g^k$, the triangle inequality gives
+\[
+ |g^kzh^l|\le\lfloor p/2\rfloor+\delta+\lfloor q/2\rfloor.
+\]
+If the axes intersect, $\delta=0$. If they are disjoint, the product translation length is $p+q+2\delta$. In a tree this follows by reading the two translated axis segments and the bridge in the product axis: the bridge is crossed twice and no cancellation crosses its endpoints. This is the disjoint-axis formula, also stated in \cite[Section 1.5]{CM}. Hence $\delta=(N-p-q)/2$ in the disjoint case, which proves the estimate in both cases.
+
+Finally, direct multiplication gives
+\[
+ gz'hz'^{-1}=g^k(gzhz^{-1})g^{-k}.
+\]
+Reduction of $z'$ changes no group element. The argument does not assume that $g,h$ are primitive or not proper powers; nor does it require $N>0$ in the intersecting-axis case.
+\end{proof}
+
+\begin{corollary}[The complete $B_{15}$ gate]\label{cor:b15}
+Every class in $\mathcal G_\sigma(32)$ has representatives with $|u|,|v|\le15$ for the same oriented common class.
+\end{corollary}
+\begin{proof}
+For $(a,b^\sigma)$, the factor lengths are $9,13$. The phase contribution is $4+6=10$, and the possible disjoint-axis contribution is at most $(32-22)/2=5$. For $(c,d^\sigma)$ the corresponding values are $0+2=2$ and $(32-6)/2=13$. Apply Lemma~\ref{lem:shorten} separately to the source and target products. Each shortening preserves its oriented conjugacy class, so the common canonical word is unchanged.
+\end{proof}
+
+\subsection{Finite calculation and exact representation}\label{sec:census}
+For each side, enumerate all reduced words in $\{X,Y,x,y\}$ of length at most $15$, including the empty word. There are exactly
+\[
+1+\sum_{j=1}^{15}4\cdot3^{j-1}=2\cdot3^{15}-1=28,697,813
+\]
+such words. A prefix-tree recursion visits every one exactly once: every nonempty reduced word has a unique reduced prefix and a last letter other than the inverse of that prefix's last letter.
+
+For each source witness store $\NF(aub^\sigma u^{-1})$; for each target witness compute $\NF(cvd^\sigma v^{-1})$ and compare against the source set. Free reduction and cyclic reduction preserve the required conjugacy class, and all cyclically reduced conjugates are cyclic rotations. Thus this comparison is exact for the bounded witnesses. Corollary~\ref{cor:b15} makes it complete for arbitrary witnesses with common length at most $32$.
+
+The positive scanner partitions canonical strings by a fixed FNV-1a 64-bit value modulo three. The partition hash only decides which run owns a class; equality is full string equality. A collision cannot suppress a class or create a false match. All three partitions are run. The negative scanner uses an injective base-four encoding with a leading sentinel bit in an unsigned $128$-bit integer. The raw input length is at most $22+2\cdot15=52$, within its $63$-letter guard and the exact encoding range. Sorting and binary search compare the exact keys, not hashes.
+
+\begin{proposition}[Finite gate result]\label{prop:gate}
+The complete finite calculation gives
+\[
+\mathcal G_+(32)=\varnothing,\qquad
+\mathcal G_-(32)=\{U_1,U_2,U_3,U_4\},
+\]
+with the words and witnesses in Table~\ref{tab:classes}.
+\end{proposition}
+\begin{proof}[Proof by the supplied finite calculation]
+The full positive scan has $28,501,105$ distinct source classes and no common class. The three partition counts are $9,501,196$, $9,499,431$, and $9,500,478$. The full negative scan has $28,501,106$ distinct source classes and exactly five common classes. Four have lengths $6,16,26,28$; the fifth is
+\[
+ \word{XXYxYYYYXyyyyxYYYYXYxyyyyXYYYYxyyyyy},
+\]
+of length $36$, which is outside the gate. The four displayed witnesses verify existence directly. Exhaustiveness follows from the complete scans and the preceding reduction, not merely from checking these witnesses.
+
+The preserved independent implementations are supplied as
+\pathfile{checkers/positive_B15_review055.cpp} and
+\pathfile{checkers/negative_B15_review028.cpp}.
+The current full replay records, exact source hashes, and raw outputs are in
+\pathfile{verification/B15_replay/}. The earlier independent review records are retained separately in \pathfile{provenance/}.
+\end{proof}
+
+\begin{table}[H]\centering\small
+\caption{The four negative common classes of cyclic length at most $32$. Witnesses satisfy $\NF(aub^{-1}u^{-1})=\NF(cvd^{-1}v^{-1})=U_i$.}\label{tab:classes}
+\begin{tabular}{lrl}\toprule
+Class & Length & Word and witnesses\\\midrule
+$U_1$ &6&\word{XXYYxy}\\
+&&$u=1$, $v=\word{x}$\\[5pt]
+$U_2$ &16&\word{XXYxYYYYXYxyyyyy}\\
+&&$u=\word{XYx}$, $v=\word{xyyyy}$\\[5pt]
+$U_3$ &26&\word{XXYYYYYxyyyyXYxYYYYXyyyyxy}\\
+&&$u=\word{XyyyyxYYYY}$, $v=\word{xYYYYXyyyyx}$\\[5pt]
+$U_4$ &28&\word{XXYYYYxyyyyyXXYxxYYYYYXyyyxy}\\
+&&$u=\word{yyyyyXXYYYYx}$, $v=\word{xxYYYYYXyyyx}$\\\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Central obstructions for the four common words}\label{sec:central}
+This section uses only four fixed group images and eight finite linear certificates. An isomorphism description of the entire one-relator quotient is unnecessary: a homomorphism killing $U_i$ and separating the endpoint classes suffices.
+
+\begin{lemma}[Killing the outer row]\label{lem:killouter}
+Suppose the layout is $\F\Q\Q\F$ and its negative common class is $U_i$. In every group image killing $U_i$, the images of $b_0,d_0$ must be conjugate up to inversion. For layout $\Q\F\F\Q$, the analogous necessary condition holds for $a_0,c_0$.
+\end{lemma}
+\begin{proof}
+The outer row during the central two mixes is always a conjugate or inverse of the common word, so it is trivial in such an image. Central mixes use it as the donor and hence do not change the other row in the image. Before and after those mixes, the other row changes only by conjugation and inversion. In the $\F$ layout that other row is the second row, initially a conjugate or inverse of $b_0$, and finally a conjugate or inverse of $d_0$. In the $\Q$ layout it is the first row. The inverse-class convention for the negative $\Q$ gate has the same normal closure and therefore the same killed image.
+\end{proof}
+
+\subsection{Explicit group images}
+For each $U_i$ the data file \pathfile{data/quotient_models.json} supplies a rank $r_i$, an automorphism $\phi_i$ of the free group on $r_i$ generators, its inverse, and the four endpoint normal forms. Signed integers encode generators and inverses; indices in these free-group words are one-based. Let
+\[
+ H_i=F_{r_i}\rtimes_{\phi_i}\mathbb Z,\qquad
+ (w,k)(v,l)=(w\phi_i^k(v),k+l).
+\]
+Write the kernel basis as $z_j$, indexed by consecutive integers $j$ beginning at the listed \word{index\_min}. Map $x\mapsto(1,1)$ and $y\mapsto(z_0,-1)$. In the signed-integer data encoding, $z_0$ is the one-based generator number $1-\word{index\_min}$.
+
+The checker verifies both substitution compositions $\phi_i\phi_i^{-1}=\phi_i^{-1}\phi_i=\mathrm{id}$ on every free generator. It then evaluates $U_i$ to $(1,0)$ and reevaluates all four endpoint normal forms. Thus the map is a well-defined group homomorphism killing $U_i$. The ranks are $2,6,6,7$. All four endpoint images have stable exponent one.
+
+\begin{lemma}[Reducing arbitrary conjugators to the kernel]\label{lem:kernel}
+Let $g,h\in H_i$ have stable exponent one. If $vgv^{-1}=h$, then a conjugator of stable exponent zero also conjugates $g$ to $h$. Moreover $g^{-1}$ cannot be conjugate to $h$.
+\end{lemma}
+\begin{proof}
+Let $k$ be the stable exponent of $v$. The element $v'=vg^{-k}$ has stable exponent zero and satisfies $v'gv'^{-1}=vgv^{-1}$. Stable exponent is a conjugacy invariant and equals $-1$ on $g^{-1}$, excluding the second possibility.
+\end{proof}
+
+Writing $g=(W,1)$ and $h=(V,1)$, conjugacy by $(C,0)$ would require
+\[
+ V=CW\phi_i(C^{-1}),\quad\text{equivalently}\quad CW=V\phi_i(C).
+\]
+This necessary equation will be contradicted for each of the eight endpoint pairs.
+
+\subsection{Truncated noncommutative algebra certificates}
+Fix a prime $p$ and truncation degree $d$, and let
+\[
+ A=\mathbb F_p\langle X_0,\ldots,X_{r-1}\rangle/(
+ \text{all monomials of degree greater than }d).
+\]
+Let $J$ be the ideal of polynomials with zero constant term. Each $1+X_j$ is a unit, with inverse $1-X_j+X_j^2-\cdots+(-X_j)^d$. Sending the $j$th free generator to $1+X_j$ defines a homomorphism to $1+J$; injectivity is not needed. Substitution by the Magnus images of $\phi_i$ induces an algebra automorphism $\Phi$; its inverse is induced by the supplied inverse free-group substitution.
+
+Use the same symbols $W,V$ for the endpoint images in $1+J$. Any possible group conjugator has polynomial image
+\[
+ C=1+\sum_{1\le|H|\le d}c_H H.
+\]
+Allowing arbitrary coefficients $c_H\in\mathbb F_p$ enlarges the possible images and therefore gives a necessary condition. Since $\Phi$ is linear, $CW=V\Phi(C)$ becomes
+\begin{equation}\label{eq:linear}
+ \sum_{1\le|H|\le d}c_H\bigl(HW-V\Phi(H)\bigr)=V-W.
+\end{equation}
+A supplied linear functional $\ell:A\to\mathbb F_p$ certifies inconsistency by satisfying
+\[
+ \ell\bigl(HW-V\Phi(H)\bigr)=0\ \text{for every nonempty }H,
+ \qquad \ell(V-W)=1.
+\]
+Applying $\ell$ to~\eqref{eq:linear} gives $0=1$. This excludes conjugators of \emph{any} free-kernel word length. The number of unknown coefficients in Table~\ref{tab:dual} is an algebra dimension, not a conjugator-length cutoff.
+
+\begin{table}[H]\centering
+\caption{Eight dual certificates. Each row represents both central directions.}\label{tab:dual}
+\begin{tabular}{lrrrrl}\toprule
+Killed word & Kernel rank & $p$ & $d$ & Columns per direction & Endpoint directions\\\midrule
+$U_1$&2&5&4&30& $b_0\to d_0$, $a_0\to c_0$\\
+$U_2$&6&113&4&1554& $b_0\to d_0$, $a_0\to c_0$\\
+$U_3$&6&17&2&42& $b_0\to d_0$, $a_0\to c_0$\\
+$U_4$&7&2&2&56& $b_0\to d_0$, $a_0\to c_0$\\\bottomrule
+\end{tabular}
+\end{table}
+
+The complete coefficients are in \pathfile{data/dual_certificates.json}. Its monomial indices are zero-based, in contrast with the one-based signed free-group words. Most functionals are explicit sparse lists. For $U_2$, degrees one through three are listed in increasing degree and lexicographic order, and a degree-four monomial $(i_0,i_1,i_2,i_3)$ has coefficient
+\[
+53\cdot26^{i_0}26^{i_1}26^{i_2}63^{i_3}\pmod{113}.
+\]
+The rank value $258$ retained in the original $U_2$ metadata concerns only the lower-degree block; it is not the rank of the full $1554$-column system. No rank claim is needed for the dual contradiction.
+
+\begin{proposition}[Fixed central separation]\label{prop:central}
+For each $i=1,2,3,4$, the image killing $U_i$ supplied above has $b_0$ not conjugate up to inversion to $d_0$, and $a_0$ not conjugate up to inversion to $c_0$.
+\end{proposition}
+\begin{proof}
+The exact checker verifies every column pairing and the normalized nonzero right-hand-side pairing for all eight certificates, using the definitions above. There are $2(30+1554+42+56)=3364$ column equalities in total. Thus no kernel conjugator exists in either direction. Lemma~\ref{lem:kernel} excludes arbitrary conjugators and the inverse orientation. The verified image of $U_i$ is trivial, so these are valid obstructions for the original free-group quotient conditions.
+\end{proof}
+
+\section{Proof of the four-mix theorem}\label{sec:fourproof}
+\begin{proof}[Proof of Theorem~\ref{thm:four}]
+Suppose a path from $S$ to $E_0$ has exactly four mixes and length $L\le23$. Lemma~\ref{lem:fourmatrix} leaves six layouts. Lemma~\ref{lem:untouched} excludes \word{FFFF} and \word{QQQQ}, while Lemma~\ref{lem:blocks} excludes \word{FFQQ} and \word{QQFF}.
+
+For either remaining layout, Lemmas~\ref{lem:signs} and~\ref{lem:cost} produce a common class in $\mathcal G_+(32)$ or $\mathcal G_-(32)$. Proposition~\ref{prop:gate} excludes the positive branch. In the negative branch the common class is $U_i$ for some $i\in\{1,2,3,4\}$. Lemma~\ref{lem:killouter} requires the relevant endpoint classes to be conjugate up to inversion in every image killing $U_i$, contradicting Proposition~\ref{prop:central}. All layouts are impossible. Therefore $L\ge24$.
+\end{proof}
+
+\section{Six-mix placement classification}\label{sec:sixproof}
+There are $2^6\cdot2^6=4096$ normalized layout/sign profiles. Exact multiplication gives $244$ profiles with $P=I$ and $16$ with $P=-I$, spread over $22$ layouts. The other $42$ layouts are excluded already by the exponent projection.
+
+Of these $22$ layouts, Lemma~\ref{lem:untouched} excludes \word{FFFFFF} and \word{QQQQQQ}. Lemma~\ref{lem:blocks} excludes \word{FFFFQQ}, \word{FFQQQQ}, \word{QQFFFF}, and \word{QQQQFF}. Thus six layouts are removed: two by untouched-row cyclic lengths and four by quotient obstructions. They are not six quotient exclusions.
+
+\begin{table}[H]\centering
+\caption{The $16$ residual six-mix layouts and their normalized sign counts.}\label{tab:six}
+\begin{tabular}{lrr@{\qquad}lrr}\toprule
+Layout & $I$ & $-I$ & Layout & $I$ & $-I$\\\midrule
+\word{FFFQQF}&12&0&\word{QFFFFQ}&12&0\\
+\word{FFQFFQ}&8&2&\word{QFFQFF}&8&2\\
+\word{FFQQFF}&12&0&\word{QFFQQQ}&12&0\\
+\word{FQFFQF}&8&2&\word{QFQFQF}&6&2\\
+\word{FQFQFQ}&6&2&\word{QFQQFQ}&8&2\\
+\word{FQQFFF}&12&0&\word{QQFFQQ}&12&0\\
+\word{FQQFQQ}&8&2&\word{QQFQQF}&8&2\\
+\word{FQQQQF}&12&0&\word{QQQFFQ}&12&0\\\midrule
+\multicolumn{6}{c}{Total: $156$ profiles with $I$, $16$ with $-I$; $172$ profiles overall.}\\\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{proof}[Proof of Theorem~\ref{thm:six}]
+The matrix enumeration, followed by the six exclusions just described, gives Table~\ref{tab:six}. Lemma~\ref{lem:push} identifies the final diagonal sign matrix with $P$. If $f_\F,f_\Q$ are the original row inversion counts, then
+\[
+ D_{\rm tot}=\diag((-1)^{f_\F},(-1)^{f_\Q}).
+\]
+Thus $I$ requires both counts even and $-I$ requires both odd. Let $C$ count all single-letter conjugation moves. Since all atomic moves are either mixes, inversions, or these conjugations,
+\[
+ L=6+f_\F+f_\Q+C.
+\]
+For $L\le23$, the nonmix budget is at most $17$. In the $-I$ case, $f_\F+f_\Q\ge2$, so $C\le15$.
+\end{proof}
+
+The $172$ entries count normalized matrix profiles. They do not count free-group paths, actual solutions, or equivalence classes of paths. A listed layout may still be impossible for stronger reasons. Conversely, a matrix profile is only a necessary algebraic condition and supplies no path witness.
+
+\section{Formalization boundary and connection context}\label{sec:formal}
+\subsection{What the existing Lean files establish}
+The fixed submission source 001 contains $34$ new declarations: $13$ in
+\pathfile{Submission/EFamily.lean}, $14$ in
+\pathfile{Submission/Connections.lean}, and $7$ in
+\pathfile{Submission/SixMixFinite.lean}. Independent review 002 checked their full types, axioms, import closure, and rejection controls against the fixed source.
+
+For this appendix, the last module covers the finite matrix definitions and the six-mix finite inventory. The passage from an arbitrary free-group path to that inventory, the quotient obstructions, the witness-shortening proof, the $B_{15}$ common-word calculation, and the central certificate implication are readable mathematical and exact-computation arguments here. The existence of a Lean matrix census is not a Lean proof of either full path theorem in this appendix.
+
+The complete declaration-by-declaration mapping accepted in review 002 is supplied in \pathfile{provenance/LEAN_DECLARATION_MAP_002.json}. The small version-003 Python checker is an additional executable audit, not a formal proof assistant and not a Lean kernel replay. No new Lean execution is claimed for the preparation of this appendix.
+
+\begin{center}\small
+\begin{tabular}{p{.40\linewidth}p{.48\linewidth}}\toprule
+Claim & Verification boundary\\\midrule
+Six-mix signed matrix inventory & Existing Lean finite declarations; exact Python recomputation here\\
+Arbitrary-path sign projection and move budgets & Hand proofs in Sections~\ref{sec:matrix}, \ref{sec:gate}, \ref{sec:sixproof}\\
+Two quotient obstructions & Explicit $S_{10}$ check and HNN hand proof\\
+Unbounded-witness to $B_{15}$ reduction & Cayley-tree hand proof in Section~\ref{sec:shortening}\\
+Positive/negative complete finite gates & Preserved exact C++ scanners; full fresh replay records\\
+Four fixed central obstructions & Group-image proof plus all $3364$ exact dual-column checks\\
+English consolidation 003-C1 & Independent AI review 004; post-correction check\\\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{How the result fits the proposed submission}
+The fixed pair $S$ is already reached from the standard ordered AK(3) pair by the existing $42$-move certificate under total relator length cap $22$. That is a separately fixed bridge, not an $S\to E_0$ bridge. The exit-family constructions in the submission and the $n+8$-family results are separate positive constructions. This appendix supplies scoped obstruction information about one proposed connecting endpoint pair.
+
+An equivalence involving the existence of a path that hits an entry must be read existentially; it does not say that the entry occurs on a particular already-given path. None of the arguments here proves AK(3) trivial, constructs a missing $S$-to-exit connection, proves a global shortest distance from $S$ to $E_0$, or establishes novelty against every existing publication.
+
+\section{Reproduction and exact evidence interface}\label{sec:reproduce}
+All paths below are relative to the root of the accompanying ZIP. Python checks require only Python~3's standard library. Full scanner replay requires Linux and \word{g++} with C++17 support.
+
+\begin{enumerate}
+\item Verify the self-excluding SHA-256 manifest \pathfile{FILE_SHA256.json}.
+\item Run \word{python3}\ \pathfile{checkers/check_appendix.py}. It regenerates the four- and six-mix matrix profiles, checks both inverse substitutions for every model, kills each $U_i$, recomputes the endpoint normal forms, checks the four explicit common-word witnesses, verifies the $S_{10}$ image, and checks all dual columns and right-hand sides. Its output is \pathfile{verification/exact_checks.json}.
+\item Run \word{python3}\ \pathfile{checkers/replay_B15.py} to recompile the preserved scanners and replay the three positive partitions and one complete negative scan. Runs are sequential. Each child has a $4$~GiB address-space limit, a $90/91$-second CPU soft/hard limit, and a $150$-second wall timeout. On a slower machine a timeout is inconclusive; it is not a mathematical counterexample.
+\item Inspect \pathfile{verification/B15_replay/RESULT.json} and the four raw JSON outputs. Positive outputs are compared field-for-field to the accepted review-055 partition records. The negative class set, enumeration counts, and distinct-source count are compared to the fixed reviewed data.
+\end{enumerate}
+
+The full scans are ordinary complete enumeration runs. They do not emit a separately checkable Lean or SAT unsatisfiability certificate. Reviewability comes from the short exact implementations, the completeness proof, the explicit guards and representation, and independent implementation review retained in the provenance. The dual algebra certificates, by contrast, are small explicit witnesses of linear inconsistency and are checked directly without rerunning a search for them.
+
+\subsection{Evidence inventory}
+\begin{longtable}{p{.43\linewidth}p{.48\linewidth}}
+\toprule File or directory & Content\\\midrule\endhead
+\pathfile{data/matrix_profiles.json} & Every normalized sign assignment reaching $I$ or $-I$, with all layouts represented\\
+\pathfile{data/common_classes.json} & Four common words, exact witnesses, and the excluded length-$36$ fifth class\\
+\pathfile{data/quotient_models.json} & Four explicit automorphisms, inverses, and endpoint images\\
+\pathfile{data/dual_certificates.json} & Eight normalized dual functionals and their arithmetic conventions\\
+\pathfile{checkers/check_appendix.py} & Direct finite checks of the appendix data and equations\\
+\pathfile{checkers/*B15*.cpp} & Preserved independently written positive and negative scanners\\
+\pathfile{checkers/replay_B15.py} & Resource-limited fresh replay and expected-result checks\\
+\pathfile{verification/} & Version-003 exact-check and full-scan records\\
+\pathfile{provenance/} & Fixed-source hashes, earlier review records, corrected HNN convention, and Lean declaration map\\
+\pathfile{FILE_SHA256.json} & Byte counts and SHA-256 values for every other supplied file\\\bottomrule
+\end{longtable}
+
+\subsection{Source lineage and remaining release work}
+The principal fixed review chain is: review~050 for witness shortening; reviews~028 and~052 for the negative common-word census and length-$32$ gate; review~055 for the complete positive gate and all-sign reduction; review~057 for the four-mix theorem and corrected HNN cyclic-conjugation shift; candidate~059 and review~060 for the six-mix placement classification; and submission review~002 for the integrated scope and new $34$ declarations. The fixed central certificates for $U_1,U_3,U_4$ are extracted from review~020, and the $U_2$ certificate from stage~022, accepted through reviews~023/028 and the subsequent chain. Extraction bindings record the exact input bytes used here.
+
+Independent AI review 004 examines the English mathematical wording and its alignment with the data bundle, including orientation choices, cost accounting, the HNN convention, and the formalization boundary. Its final decision and correction closure accompany this version. A public release also needs its final repository commit, reference reconciliation, and license/attribution decisions. This preparation does not publish or submit anything externally.
+
+\begin{thebibliography}{9}\small
+\bibitem{BMR}
+A. V. Borovik, A. G. Myasnikov, and V. N. Remeslennikov,
+\emph{Conjugacy problem in HNN-extensions: regular elements and black holes},
+MIMS EPrint 2007.231 (2007).
+Theorem 2.1 (Britton lemma) and Theorem 3.9 (nonbase cyclic conjugacy criterion).
+\url{https://eprints.maths.manchester.ac.uk/991/1/OmskVestnik.pdf}
+
+\bibitem{CM}
+M. Culler and J. W. Morgan,
+\emph{Group actions on $\mathbb R$-trees},
+Proceedings of the London Mathematical Society (3) \textbf{55} (1987), 571--604.
+Section 1.5 (disjoint-axis product length).
+DOI: \href{https://doi.org/10.1112/plms/s3-55.3.571}{10.1112/plms/s3-55.3.571}.
+Author-hosted text: \url{https://marc-culler.info/static/home/papers/RTrees.pdf}.
+\end{thebibliography}
+\end{document}

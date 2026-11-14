@@ -1,0 +1,109 @@
+{
+  "edition": "Public extract of the original review 007 record for manuscript 006",
+  "original_sha256": "c87ce3c2a9763cc4a06cf66ff598a88868f2d269e05de2bd30566fe18568bb80",
+  "review_id": "AK3_REVIEW007_MATH_FINAL",
+  "target": "frozen006 integrated manuscript006",
+  "paper_sha256": "df6e2c23bdaf474bd1ed35f0ea6db2b45ad19c55c247d79c03206a9fa477ae37",
+  "appendix_tex_sha256": "9d1146a6fc8018abc0e467d538d30f74a0b11af13a0b172900ec590cbda32efc",
+  "decision": "ACCEPT_FROZEN006_WITHIN_MATHEMATICAL_REVIEW_SCOPE",
+  "decision_ja": "凍結006の指定手証明と統合論旨を本担当の数学的査読範囲で受理する。必須修正なし。これは004の継承判定でも、全Lean/全B15の新規再実行宣言でもない。",
+  "required_findings": [],
+  "optional_new_findings": [],
+  "C05_status": "NEW_INDEPENDENT_HAND_PROOF_REVIEW_OF_006_PASSED",
+  "C05_ja": "全自然数を対象に全block/prefixとn=0を独立導出した。104点の有限再生は補助。元009の未収録証拠を確認したという主張はしない。",
+  "mathematical_findings": [
+    {
+      "id": "M01",
+      "severity": "CONFIRMED",
+      "locator": "PAPER_EN.md:76-111",
+      "conclusion_ja": "E_n の端点、3n+12 費用、構成の正確な peak 4n+10 は全自然数で整合する。",
+      "derivation_ja": "m=n+1>=1。初期だけ m=1 を別扱いし、ID6 後 j<m は第1語 y^(m-1-j)xY^mXy^j、長さ2m+1。最後のID9で両語2m+3となり4m+6を達成。ID5後の各ID13とID2後の各ID12の長さ式、および最後6手の3,2,3,3,4,2が全接頭辞を覆う。n=0の初期6、peak10も正しい。有限再生は補助であり全n証明の代用ではない。",
+      "required_change": null
+    },
+    {
+      "id": "M02",
+      "severity": "CONFIRMED",
+      "locator": "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex:98-122,228-274",
+      "conclusion_ja": "任意符号の元経路から向き付き共通類への削減と元経路費用 N<=L+10、N偶数は成立する。",
+      "derivation_ja": "T_K(s)D=D T_K(suv)で元反転を左へ押す。行列条件は元経路の投影のみ。F切断ではaの符号を+にして e(a)+sigma e(b)=(sigma,-1)を得る。2候補は互いに等しくも負でもないため中央の共役/反転を通した枝と向きが一致する。Qの負枝は逆類になるが長さと正規閉包を保つ。c1,c2は元経路の端の共役数で、2N<=28+2(c1+c2)<=2L+20。奇数2語の積からN偶数。",
+      "required_change": null
+    },
+    {
+      "id": "M03",
+      "severity": "CONFIRMED",
+      "locator": "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex:276-337",
+      "conclusion_ja": "証人短縮補題とB15への完全性削減は成立する。",
+      "derivation_ja": "Cayley木の軸A_gとzA_h間の距離deltaについて、g,hの整数冪でそれぞれ位相をfloor(p/2),floor(q/2)以内に選べる。軸が交わればdelta=0、離れれば積の移動長N=p+q+2delta。左右冪を付けたzは積の向き付き共役類を保つ。(p,q)=(9,13),(1,5),N<=32の両方で上界15。",
+      "required_change": null
+    },
+    {
+      "id": "M04",
+      "severity": "CONFIRMED",
+      "locator": "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex:153-203",
+      "conclusion_ja": "2単調ブロックの排除は全共役元を対象に成立し、HNNの整数引数に抜けはない。",
+      "derivation_ja": "B,Dは安定文字符号++-で巡回Britton既約。非基底共役定理で3回転のうち同じ符号列は元の回転のみ。基底共役元を全y^sへ拡大してよい。D=y^s B y^-sからd0=y^(s+4)b0 y^(-s-4)。W(r)の最初のpinchは3|r、次は3|(r/3)を強制。r=9jで最後はy^(3j+1)となり整数jで単位元にならない。S10像も独立再計算した。",
+      "required_change": null
+    },
+    {
+      "id": "M05",
+      "severity": "CONFIRMED",
+      "locator": "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex:361-439",
+      "conclusion_ja": "半直積群像から任意長共役元を排除する双対証明への含意は正しい。",
+      "derivation_ja": "4モデルでphiと逆の両合成、U_i=1、全端点像を独立確認。安定指数1のg,hではvをvg^(-k)に置換すれば共役を保ったまま核へ入る。逆向きは安定指数が-1なので除外。Magnus像Cは定数1で、任意係数を許す方が解集合を拡大する。全非定数単項式の列HW-VPhi(H)に双対0、右辺V-Wに1を独立検算。次数切断は共役元長の切断ではない。",
+      "required_change": null
+    },
+    {
+      "id": "M06",
+      "severity": "CONFIRMED",
+      "locator": "PAPER_EN.md:157-171,273-320; appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex:441-481",
+      "conclusion_ja": "Theorem A/Bの論理結合、6除去と16残余、元反転数の偶奇/C<=15の主張は表明範囲内で整合する。",
+      "derivation_ja": "4-mixは28個I/0個-I、6-mixは244個I/16個-I。6除去は未変更行2つと単調ブロック4つであり、残余156+16=172は必要条件のみ。L=6+fF+fQ+Cで-Iなら両反転奇数、少なくとも2手なのでL<=23ならC<=15。",
+      "required_change": null
+    },
+    {
+      "id": "M07",
+      "severity": "CONFIRMED_WITH_SCOPE_LIMIT",
+      "locator": "PAPER_EN.md:119-148,313-320,322-345,347-413",
+      "conclusion_ja": "entry条件と可到達性同値は無制限存在命題として正しく読め、費用/cap/実際の橋を主張していない。",
+      "derivation_ja": "coreCount/FourWayHitと原14手のgroupStepを照合。unimodular条件により単一xを含む巡回語を正規化した際の射影指数は±1。FourWayの行/変数対称性は手列を戻し、(y,x)から(x,y)も有料手列で処理する。Connectionsの同値は可逆42手とD/Eの端点証明の合成のみ。B_n=(xy)hR_nh^-1と[1,11]変換は独立再計算した。文献上の優先性・網羅性は未検証。",
+      "required_change": null
+    }
+  ],
+  "executed_checks": {
+    "reviewer_script": "independent_math_checks.py",
+    "author_checker_imported_or_executed": false,
+    "status": "ALL_EXECUTED_ASSERTIONS_PASSED",
+    "E_family_parameters": 104,
+    "all_E_prefix_formulas_verified_at_each_parameter": true,
+    "bridge42_prefixes": 43,
+    "matrix_profiles": 4352,
+    "random_signed_projection_cases": 2000,
+    "common_word_witnesses": 4,
+    "semidirect_models": 4,
+    "endpoint_images": 16,
+    "dual_certificates": 8,
+    "dual_columns": 3364,
+    "dual_rhs": 8,
+    "S10_specialization": true,
+    "shortening_counterexample_search_cases": 100,
+    "full_B15_execution": false,
+    "new_Lean_compilation": false
+  },
+  "primary_sources_checked": [
+    {
+      "url": "https://eprints.maths.manchester.ac.uk/991/1/OmskVestnik.pdf",
+      "locator": "Theorems 2.1,3.9; printed pp.3,9; PDF pages4,10",
+      "checked_ja": "Britton pinchと非基底巡回共役条件。定理3.9は後続のregular/generic条件を要しない。"
+    },
+    {
+      "url": "https://marc-culler.info/static/home/papers/RTrees.pdf",
+      "locator": "Section1.5, printed p.577, PDF page7",
+      "checked_ja": "互いに離れた双曲軸について積の移動長が両長と距離の2倍の和になる式と証明。"
+    }
+  ],
+  "limits_ja": [
+    "全B15を本担当で再実行していない。両C++走査の列挙/正規化/完全キー比較はソースを読んだが、有限全件出力の独立再生成は別担当の範囲。",
+    "Leanコンパイル、全宣言のaxiom監査、外部依存再構築はしていない。原定義・関連証明の意味を読む範囲。",
+    "引用2論文の指定節以外の文献内容、独創性の網羅調査、未提示S-to-exit橋、AK3全体、最短性、最小peakは未検証。"
+  ]
+}

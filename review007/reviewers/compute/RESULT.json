@@ -1,0 +1,54 @@
+{
+  "edition": "Public extract of the original review 007 record for manuscript 006",
+  "original_sha256": "7bebbab396f305655fbb7bbf62e23d03a1dd2cec2859a6c17d88c25ee28182f3",
+  "review": "INDEPENDENT_AI_REVIEW007_COMPUTE_OF_FROZEN006",
+  "decision": "PASS_WITHIN_FINITE_COMPUTATION_SCOPE",
+  "required_findings": [],
+  "optional_findings": [],
+  "trust_boundaries": [
+    "Ordinary exact Python and unverified C++ compiler/runtime; no Lean/SAT certificate for full B15.",
+    "No new Lean execution and no audit of all external formal dependencies.",
+    "Arbitrary-path mathematical implications remain hand proofs; finite scanner pass alone does not prove unrestricted path statements.",
+    "No external human peer review, AK3 trivialization, unrestricted lower-bound theorem, global shortestness, or REVIEW-READY claim."
+  ],
+  "independent_small_implementation": {
+    "implementation": "New reviewer code; independent chronological row updates, left-to-right semidirect evaluation, explicit Magnus expansion and deconcatenation dual pairing, naive least-rotation NF, breadth enumeration. No supplied checker imported.",
+    "counts": {
+      "four_matrix_profiles": 256,
+      "six_matrix_profiles": 4096,
+      "residual_rows": 16,
+      "inverse_substitution_equalities": 42,
+      "group_models": 4,
+      "endpoint_images": 16,
+      "common_witnesses": 4,
+      "dual_columns": 3364,
+      "RHS_pairings": 8,
+      "scanner_NF_input_cases_each": 31218,
+      "scanner_B5_words_each": 485
+    }
+  },
+  "preserved_scanners": {
+    "description": "Freshly compiled and executed preserved review055/review028 sources; not a new independent B15 implementation. Source review, independent small controls, and all four bounded runs belong to current independent review.",
+    "positive_distinct_counts": [
+      9501196,
+      9499431,
+      9500478
+    ],
+    "positive_distinct_sum": 28501105,
+    "positive_common_classes": 0,
+    "negative_distinct": 28501106,
+    "negative_common_lengths": [
+      6,
+      16,
+      26,
+      28,
+      36
+    ],
+    "negative_gate32_classes": 4,
+    "witnesses_each_side_per_run": 28697813,
+    "all_exits_zero": true,
+    "resource_failures": 0,
+    "resource_limits_raised": false,
+    "census_suitable": "Yes, for the stated oriented products at B15. Unbounded-witness application additionally needs the stated hand shortening proof and all-sign path reduction."
+  }
+}

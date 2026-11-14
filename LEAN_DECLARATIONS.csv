@@ -1,0 +1,35 @@
+declaration,source,line,claims_id,recorded_axioms,review007,release009_source_unchanged_from008
+Verify.Submission.EFamily.run_first_Y,sources/submission001/lean/Submission/EFamily.lean,13,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.run_second_Y,sources/submission001/lean/Submission/EFamily.lean,21,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.run_second_y,sources/submission001/lean/Submission/EFamily.lean,29,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.prefix_run,sources/submission001/lean/Submission/EFamily.lean,43,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.first_mix,sources/submission001/lean/Submission/EFamily.lean,48,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.second_conjugations,sources/submission001/lean/Submission/EFamily.lean,52,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.second_mix,sources/submission001/lean/Submission/EFamily.lean,57,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.restore_second,sources/submission001/lean/Submission/EFamily.lean,66,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.suffix_run,sources/submission001/lean/Submission/EFamily.lean,76,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.reaches,sources/submission001/lean/Submission/EFamily.lean,79,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.word_length,sources/submission001/lean/Submission/EFamily.lean,83,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.canonical_reaches,sources/submission001/lean/Submission/EFamily.lean,90,C04,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.EFamily.zero_initial,sources/submission001/lean/Submission/EFamily.lean,101,C04,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.bridge42_length,sources/submission001/lean/Submission/Connections.lean,16,C02,,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.bridge42_reaches,sources/submission001/lean/Submission/Connections.lean,17,C02,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.bridge42_cap,sources/submission001/lean/Submission/Connections.lean,23,C02,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.bridge42_attains22,sources/submission001/lean/Submission/Connections.lean,25,C02,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.ak3_to_S,sources/submission001/lean/Submission/Connections.lean,27,C02,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.S_to_ak3,sources/submission001/lean/Submission/Connections.lean,28,C02,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.ak3_target_iff,sources/submission001/lean/Submission/Connections.lean,30,C08,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.S_standard_iff_hit,sources/submission001/lean/Submission/Connections.lean,35,C08,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.member_standard,sources/submission001/lean/Submission/Connections.lean,47,C08,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.E_standard,sources/submission001/lean/Submission/Connections.lean,49,C08,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.S_member_iff_standard,sources/submission001/lean/Submission/Connections.lean,52,C08,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.S_E_iff_standard,sources/submission001/lean/Submission/Connections.lean,58,C08,propext ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.ak3_E_iff_hit,sources/submission001/lean/Submission/Connections.lean,64,C08,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.Connections.ak3_member_iff_hit,sources/submission001/lean/Submission/Connections.lean,69,C08,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.identity_profiles,sources/submission001/lean/Submission/SixMixFinite.lean,39,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.negative_identity_profiles,sources/submission001/lean/Submission/SixMixFinite.lean,40,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.viable_layouts,sources/submission001/lean/Submission/SixMixFinite.lean,41,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.residual_layouts,sources/submission001/lean/Submission/SixMixFinite.lean,42,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.residual_identity_profiles,sources/submission001/lean/Submission/SixMixFinite.lean,43,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.residual_negative_profiles,sources/submission001/lean/Submission/SixMixFinite.lean,44,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True
+Verify.Submission.SixMixFinite.residual_names,sources/submission001/lean/Submission/SixMixFinite.lean,45,C07,propext ; Classical.choice ; Quot.sound,review007/reviewers/formal/RESULT.json,True

@@ -1,0 +1,68 @@
+{
+  "sha256": "758cdf776f6e650ec53a4c6207dd882cd365c2fbdee3af67b56dae0f991317a2",
+  "bytes": 481731,
+  "main_pages": 8,
+  "appendix_pages": 14,
+  "total_pages": 22,
+  "p19_full_url": "https://github.com/kushuel-pixel/acc-nplus8-lean/tree/3ce25bf13b32d31e6989ab663a913b65779624e4",
+  "p19_on_page": 8,
+  "p19_on_separate_complete_line_in_poppler_and_pypdf": true,
+  "p19_single_exact_uri_annotation": true,
+  "p19_link_rect_points": [
+    53.0,
+    393.5398,
+    532.7971,
+    407.9398
+  ],
+  "appendix_page_streams_and_boxes_identical": true,
+  "render_dpi": 118,
+  "pages_pixel_identical_to_012": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "pdf_author": "Hiromu Yasuno",
+  "page_labels_verified": true,
+  "main_text_fonts_actually_used": {
+    "/AAAAAA+DejaVuSans": {
+      "embedded": true,
+      "ToUnicode": true,
+      "extracted_text_characters": 22286
+    },
+    "/AAAAAA+DejaVuSans-Bold": {
+      "embedded": true,
+      "ToUnicode": true,
+      "extracted_text_characters": 975
+    },
+    "/AAAAAA+DejaVuSansMono": {
+      "embedded": true,
+      "ToUnicode": true,
+      "extracted_text_characters": 651
+    }
+  },
+  "applicable_main_fonts_embedded_with_ToUnicode": true,
+  "native_extraction_prior_11_fragments_passed": true,
+  "manuscript_sha256": "efe8a8907c135bde45744036a1251aee91cb9aba81df40dac043e560d1ed8314",
+  "checks": {
+    "full_table_ID_0_to_13": "Main-1",
+    "full_Theorem_B": "Main-3",
+    "normalized_main_text_matches_012_after_removing_its_repeated_operation_table_header": true,
+    "all_22_pages_rendered_and_visually_inspected": true
+  },
+  "layout_change": "First page frame uses the six points normally reserved for bottom padding. The operation table and the Theorem B paragraph are kept together."
+}

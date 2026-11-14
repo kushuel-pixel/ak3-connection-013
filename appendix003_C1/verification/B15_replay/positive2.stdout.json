@@ -1,0 +1,1 @@
+{"bound":15,"partition":2,"partition_modulus":3,"partition_hash":"FNV1a64","kind":"F","outer_sign":1,"target":"E0","source_factors":["XyyyxYYYY","XyyyyyxxYYYYY"],"target_factors":["Y","XyxxY"],"tested_forward":28697813,"tested_backward":28697813,"selected_forward":9565849,"selected_backward":9575647,"distinct_forward":9500478,"common_words":[]}

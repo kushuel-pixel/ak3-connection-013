@@ -1,0 +1,152 @@
+{
+  "status": "PASS_DRAFT003_EXACT_CHECKS",
+  "elapsed_seconds": 0.234,
+  "models": [
+    {
+      "model": "U1",
+      "rank": 2,
+      "inverse_automorphisms": true,
+      "relator_killed": true,
+      "endpoint_normal_forms": true
+    },
+    {
+      "model": "U2",
+      "rank": 6,
+      "inverse_automorphisms": true,
+      "relator_killed": true,
+      "endpoint_normal_forms": true
+    },
+    {
+      "model": "U3",
+      "rank": 6,
+      "inverse_automorphisms": true,
+      "relator_killed": true,
+      "endpoint_normal_forms": true
+    },
+    {
+      "model": "U4",
+      "rank": 7,
+      "inverse_automorphisms": true,
+      "relator_killed": true,
+      "endpoint_normal_forms": true
+    }
+  ],
+  "duals": [
+    {
+      "id": "U1_FQQF",
+      "p": 5,
+      "d": 4,
+      "columns_checked": 30,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U1_QFFQ",
+      "p": 5,
+      "d": 4,
+      "columns_checked": 30,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U2_FQQF",
+      "p": 113,
+      "d": 4,
+      "columns_checked": 1554,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U2_QFFQ",
+      "p": 113,
+      "d": 4,
+      "columns_checked": 1554,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U3_FQQF",
+      "p": 17,
+      "d": 2,
+      "columns_checked": 42,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U3_QFFQ",
+      "p": 17,
+      "d": 2,
+      "columns_checked": 42,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U4_FQQF",
+      "p": 2,
+      "d": 2,
+      "columns_checked": 56,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    },
+    {
+      "id": "U4_QFFQ",
+      "p": 2,
+      "d": 2,
+      "columns_checked": 56,
+      "all_column_pairings": 0,
+      "rhs_pairing": 1
+    }
+  ],
+  "total_dual_columns": 3364,
+  "common_class_witnesses": [
+    {
+      "word": "XXYYxy",
+      "length": 6,
+      "witness_lengths": [
+        0,
+        1
+      ]
+    },
+    {
+      "word": "XXYxYYYYXYxyyyyy",
+      "length": 16,
+      "witness_lengths": [
+        3,
+        5
+      ]
+    },
+    {
+      "word": "XXYYYYYxyyyyXYxYYYYXyyyyxy",
+      "length": 26,
+      "witness_lengths": [
+        10,
+        11
+      ]
+    },
+    {
+      "word": "XXYYYYxyyyyyXXYxxYYYYYXyyyxy",
+      "length": 28,
+      "witness_lengths": [
+        12,
+        12
+      ]
+    }
+  ],
+  "S10_quotient": true,
+  "four_mix_profiles": {
+    "I": 28,
+    "-I": 0,
+    "viable_layouts": 6
+  },
+  "six_mix_profiles": {
+    "I": 244,
+    "-I": 16,
+    "viable_layouts": 22,
+    "residual_layouts": 16,
+    "residual_I": 156,
+    "residual_minus_I": 16
+  },
+  "full_B15_scans_invoked_by_this_checker": false,
+  "Lean_invoked": false,
+  "new_independent_review_of_appendix003": "NOT_PERFORMED"
+}

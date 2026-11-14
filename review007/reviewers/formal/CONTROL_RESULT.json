@@ -1,0 +1,55 @@
+{
+  "positive_fixture": {
+    "check": "positive_semantics",
+    "passed": true,
+    "example_count": 20
+  },
+  "negative_count": 6,
+  "all_six_expected_rejections": true,
+  "negatives": [
+    {
+      "check": "RejectWrongEndpoint",
+      "passed": true,
+      "classification": "intended_theorem_or_API_rejection",
+      "diagnostic": "Type mismatch",
+      "resource_or_import_or_parsing_failure": false
+    },
+    {
+      "check": "RejectWrongLength",
+      "passed": true,
+      "classification": "intended_theorem_or_API_rejection",
+      "diagnostic": "Type mismatch",
+      "resource_or_import_or_parsing_failure": false
+    },
+    {
+      "check": "RejectMissingUnit",
+      "passed": true,
+      "classification": "intended_theorem_or_API_rejection",
+      "diagnostic": "Application type mismatch",
+      "resource_or_import_or_parsing_failure": false
+    },
+    {
+      "check": "RejectWitnessFromIff",
+      "passed": true,
+      "classification": "intended_theorem_or_API_rejection",
+      "diagnostic": "Type mismatch",
+      "resource_or_import_or_parsing_failure": false
+    },
+    {
+      "check": "RejectReversedMatrix",
+      "passed": true,
+      "classification": "intended_theorem_or_API_rejection",
+      "diagnostic": "Tactic `decide` proved that the proposition",
+      "resource_or_import_or_parsing_failure": false
+    },
+    {
+      "check": "RejectFalseFiniteCount",
+      "passed": true,
+      "classification": "intended_theorem_or_API_rejection",
+      "diagnostic": "Tactic `decide` proved that the proposition",
+      "resource_or_import_or_parsing_failure": false
+    }
+  ],
+  "negative_raw_log_preserved": "CONTROL_RESULT_RAW.json",
+  "note": "Initial expected_diagnostic_hint for two decide controls was too specific; final classification uses inspected actual explicit proposition-is-false diagnostics. No rerun or false success classification."
+}

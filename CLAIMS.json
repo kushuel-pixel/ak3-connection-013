@@ -1,0 +1,197 @@
+{
+  "version": "SUBMISSION_CANDIDATE013",
+  "source_claim_ids_C01_to_C08_preserved": true,
+  "new_path_conditions_separated_as_C09": true,
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "Original fourteen atomic moves",
+      "paper_scope": "Section 1; exact ordered endpoints, chronological lists, one unit per ID",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Verify/AtomicSemantics.lean",
+        "review007/reviewers/formal/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [],
+      "limitation": "Python runtime, JSON parser and official verifier implementation equivalence are outside this claim.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C02",
+      "statement": "Existing 42-move bridge with peak 22",
+      "paper_scope": "Section 2; one fixed A-to-S certificate including all 43 prefixes",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Submission/Connections.lean",
+        "sources/submission001/evidence/BRIDGE42_CERTIFICATE.json",
+        "review007/reviewers/formal/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [
+        "Verify.Submission.Connections.bridge42_length",
+        "Verify.Submission.Connections.bridge42_reaches",
+        "Verify.Submission.Connections.bridge42_cap",
+        "Verify.Submission.Connections.bridge42_attains22",
+        "Verify.Submission.Connections.ak3_to_S",
+        "Verify.Submission.Connections.S_to_ak3"
+      ],
+      "limitation": "C02 certifies the displayed 42-move path and its peak of 22. The shortest-distance theorem under the length cap in [P24] and its computational assumptions are outside this audit.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C03",
+      "statement": "Unimodular entry criterion",
+      "paper_scope": "Section 3; determinant +/-1 and FourWayHit, arbitrary ordered pair",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Extension/FourWay.lean",
+        "sources/submission001/lean/CountedHit.lean",
+        "review007/reviewers/formal/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [],
+      "limitation": "Provides a continuation conditional on the hit. No successful prefix or cost/cap bound.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C04",
+      "statement": "E_n reaches (x,y) in the displayed 3n+12 moves",
+      "paper_scope": "Section 2; every natural n, including 0, canonical reduced endpoint",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Submission/EFamily.lean",
+        "review007/reviewers/formal/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [
+        "Verify.Submission.EFamily.run_first_Y",
+        "Verify.Submission.EFamily.run_second_Y",
+        "Verify.Submission.EFamily.run_second_y",
+        "Verify.Submission.EFamily.prefix_run",
+        "Verify.Submission.EFamily.first_mix",
+        "Verify.Submission.EFamily.second_conjugations",
+        "Verify.Submission.EFamily.second_mix",
+        "Verify.Submission.EFamily.restore_second",
+        "Verify.Submission.EFamily.suffix_run",
+        "Verify.Submission.EFamily.reaches",
+        "Verify.Submission.EFamily.word_length",
+        "Verify.Submission.EFamily.canonical_reaches",
+        "Verify.Submission.EFamily.zero_initial"
+      ],
+      "limitation": "The specified construction is an upper bound, not a general shortestness or peak theorem.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C05",
+      "statement": "The displayed E_n construction has peak 4n+10",
+      "paper_scope": "Section 2; exact reduced lengths of all construction blocks, every natural n including 0",
+      "verification_mode": "SELF_CONTAINED_HAND_PROOF_IN006_INDEPENDENTLY_ACCEPTED_BY_REVIEW007",
+      "evidence_paths": [
+        "PAPER_EN.md",
+        "review007/reviewers/math/RESULT.json"
+      ],
+      "declarations": [],
+      "limitation": "Exact peak of this construction only; all n and prefixes including n0 reviewed in007. Not Lean-formalized and not a minimum-peak claim. Old009 full archive was not retrieved.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C06",
+      "statement": "Exactly four mixes imply L>=24",
+      "paper_scope": "Section 4.1 Theorem A; fixed S and E0, all signs, arbitrary finite nonmix gaps, no word cap",
+      "verification_mode": "REVIEW007_HAND_PROOFS_INDEPENDENT_SMALL_CHECKS_AND_FRESH_COMPLETE_SCANNER_REPLAY",
+      "evidence_paths": [
+        "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex",
+        "appendix003_C1/verification/B15_replay/RESULT.json",
+        "appendix003_C1/data/common_classes.json",
+        "appendix003_C1/data/quotient_models.json",
+        "appendix003_C1/data/dual_certificates.json",
+        "review007/reviewers/math/RESULT.json",
+        "review007/reviewers/compute/RESULT.json"
+      ],
+      "declarations": [],
+      "limitation": "Full path theorem is not Lean. Fixed S-to-E0 endpoint and exactly four mixes only; not all paths of length<=23 or all D_n endpoints. Full B15 replay in007; small checks alone do not establish its completeness.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C07",
+      "statement": "Six-mix finite inventory",
+      "paper_scope": "Section 4.5; 4096 profiles, I244/-I16, 22 viable layouts, residual16 with156+16 profiles",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Submission/SixMixFinite.lean",
+        "appendix003_C1/data/matrix_profiles.json",
+        "review007/reviewers/formal/RESULT.json",
+        "review007/reviewers/compute/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [
+        "Verify.Submission.SixMixFinite.identity_profiles",
+        "Verify.Submission.SixMixFinite.negative_identity_profiles",
+        "Verify.Submission.SixMixFinite.viable_layouts",
+        "Verify.Submission.SixMixFinite.residual_layouts",
+        "Verify.Submission.SixMixFinite.residual_identity_profiles",
+        "Verify.Submission.SixMixFinite.residual_negative_profiles",
+        "Verify.Submission.SixMixFinite.residual_names"
+      ],
+      "limitation": "Only finite definitions, counts and names. Arbitrary-path projection and semantic applicability of the removal list are not formalized.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C08",
+      "statement": "Unbounded existential reachability equivalences",
+      "paper_scope": "Section 3; every natural n, A-to-D_n/E_n iff S-to-standard iff existence of a reachable hit",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Submission/Connections.lean",
+        "review007/reviewers/formal/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [
+        "Verify.Submission.Connections.ak3_target_iff",
+        "Verify.Submission.Connections.S_standard_iff_hit",
+        "Verify.Submission.Connections.member_standard",
+        "Verify.Submission.Connections.E_standard",
+        "Verify.Submission.Connections.S_member_iff_standard",
+        "Verify.Submission.Connections.S_E_iff_standard",
+        "Verify.Submission.Connections.ak3_E_iff_hit",
+        "Verify.Submission.Connections.ak3_member_iff_hit"
+      ],
+      "limitation": "No path witness, first-hit depth, cost preservation, cap preservation or pointwise necessity on a given path.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C09",
+      "statement": "Six-mix necessary path conditions",
+      "paper_scope": "Section 4.1 Theorem B; fixed S/E0, original inversion and conjugation counts, C<=15 for L<=23 in -I case",
+      "verification_mode": "REVIEW007_HAND_PATH_PROOFS_AND_FINITE_LEAN_INVENTORY",
+      "evidence_paths": [
+        "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex",
+        "sources/submission001/lean/Submission/SixMixFinite.lean",
+        "review007/reviewers/math/RESULT.json",
+        "review007/reviewers/compute/RESULT.json"
+      ],
+      "declarations": [],
+      "limitation": "Necessary conditions, not full six-mix exclusion. The sixteen layouts and eight-plus-mix branches remain open.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    },
+    {
+      "id": "C10",
+      "statement": "Inherited D_n construction of length n+8",
+      "paper_scope": "Section 2; every natural n, fixed D_n input and strict (x,y) endpoint",
+      "verification_mode": "REVIEW007_FRESH_LOCAL_LEAN_BUILD_AND_TYPED_SCOPE; inherited contribution status retained",
+      "evidence_paths": [
+        "sources/submission001/lean/Verify/SevenPrefix.lean",
+        "review007/reviewers/formal/RESULT.json",
+        "validation008/lean/RESULT.json"
+      ],
+      "declarations": [],
+      "limitation": "Upper bound, previously submitted as P19. Not a new general minimality claim.",
+      "reviewed_mathematical_input": "Review 007 covers the fixed 006 mathematics. Editions 009 through 012 retain those theorem statements and proofs."
+    }
+  ],
+  "new_independent_review": "NO_NEW_REVIEW_OF_013",
+  "new_Lean_execution": false,
+  "independent_review": "007 reviewed the fixed manuscript 006. Claude later reported separate scoped reviews of 008 and 011. Claude subsequently reported checking the four editorial changes in 012.",
+  "new_Lean_execution_scope": "013 checks pagination and byte identity against 012. Prior execution records are included."
+}

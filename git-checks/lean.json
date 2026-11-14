@@ -1,0 +1,84 @@
+{
+  "status": "PASS_PORTABLE008_REVIEWED_LOCAL_SCOPE",
+  "local_modules": 31,
+  "complete_new_types": 34,
+  "inherited_type_contracts": 4,
+  "exact_axiom_sets": 34,
+  "positive_semantic_examples": 20,
+  "intended_negative_controls": [
+    {
+      "name": "RejectWrongEndpoint",
+      "passed": true,
+      "returncode": 1,
+      "diagnostic": "Type mismatch",
+      "resource_or_import_failure": false
+    },
+    {
+      "name": "RejectWrongLength",
+      "passed": true,
+      "returncode": 1,
+      "diagnostic": "Type mismatch",
+      "resource_or_import_failure": false
+    },
+    {
+      "name": "RejectMissingUnit",
+      "passed": true,
+      "returncode": 1,
+      "diagnostic": "Application type mismatch",
+      "resource_or_import_failure": false
+    },
+    {
+      "name": "RejectWitnessFromIff",
+      "passed": true,
+      "returncode": 1,
+      "diagnostic": "Type mismatch",
+      "resource_or_import_failure": false
+    },
+    {
+      "name": "RejectReversedMatrix",
+      "passed": true,
+      "returncode": 1,
+      "diagnostic": "Tactic `decide` proved that the proposition",
+      "resource_or_import_failure": false
+    },
+    {
+      "name": "RejectFalseFiniteCount",
+      "passed": true,
+      "returncode": 1,
+      "diagnostic": "Tactic `decide` proved that the proposition",
+      "resource_or_import_failure": false
+    }
+  ],
+  "selected_kernel_replays": [
+    {
+      "module": "Submission.EFamily",
+      "passed": true,
+      "mode": "same default kernel replayFromImports"
+    },
+    {
+      "module": "Submission.Connections",
+      "passed": true,
+      "mode": "same default kernel replayFromImports"
+    },
+    {
+      "module": "Submission.SixMixFinite",
+      "passed": true,
+      "mode": "same default kernel replayFromImports"
+    }
+  ],
+  "source_unchanged": true,
+  "new_independent_review": false,
+  "fresh_external_source_rebuild": false,
+  "trust_boundary": "same fixed runtime/kernel and existing pinned external compiled caches",
+  "limits": {
+    "Lean_j": 1,
+    "Lean_M_MiB": 4096,
+    "AS_bytes": 17179869184,
+    "CPU_soft_hard_seconds": [
+      180,
+      181
+    ],
+    "wall_seconds": 240
+  },
+  "no_install_fetch_update_or_cloud_write": true
+}

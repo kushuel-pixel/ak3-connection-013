@@ -1,0 +1,103 @@
+{
+  "extracted_from_local_fixed_snapshots": [
+    {
+      "source": "022/inputs/MODELS017.json",
+      "bytes": 20352,
+      "sha256": "bf55da14d264f16a7a2bee4df117f315e884f2bc270391e5edb315fece077a86"
+    },
+    {
+      "source": "020/replay/CERTIFICATES.json",
+      "bytes": 29262,
+      "sha256": "b7a000cee30f8117806fb8938ddc6a62d464fcc96a4f2fca38d734cbded08b0d"
+    },
+    {
+      "source": "022/CERTIFICATES.json",
+      "bytes": 8816,
+      "sha256": "d855fa5d71cf0f2de6669db077d25551b33141bb3d733bff61fc01ae9b3302cb"
+    },
+    {
+      "source": "051/generated/final/CLASSIFICATION_AND_CENTRAL_ATLAS.json",
+      "bytes": 4569,
+      "sha256": "478b120350ab8d2fce5e7248c148a95611d584c8f6cbbfd58da652dfa21bed04"
+    },
+    {
+      "source": "055/compute/generated/final/CHECK_EVIDENCE.json",
+      "bytes": 18006,
+      "sha256": "d9a62324d6a60462304e9f6581f2198001baf118a7bf6c9e2b3c9eb023b47d67"
+    },
+    {
+      "source": "055/compute/INDEPENDENT_SCANNER055.cpp",
+      "bytes": 4292,
+      "sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493"
+    },
+    {
+      "source": "028/compute/independent_gate.cpp",
+      "bytes": 4531,
+      "sha256": "19cbc94938420ca6926ec8d0859891e3bbfa950dd9fc1da909e85562591d0d79"
+    },
+    {
+      "source": "028/compute/B15_INDEPENDENT.RUN.json",
+      "bytes": 620,
+      "sha256": "cbe34af19b1210f98dd6df376b054a54e015613a52de3231d749edf1c7566101"
+    },
+    {
+      "source": "028/compute/REVIEW.json",
+      "bytes": 7277,
+      "sha256": "0fb7f809437400f79ef3a9beb7902c57a0bbe16e857f8f19d183b3dc8c884e57"
+    },
+    {
+      "source": "055/compute/generated/final/REVIEW.json",
+      "bytes": 896,
+      "sha256": "a05404ea6fcfdc97de226adc58cb2f2ff9cd4a03cd5ab6f97f98f2bcd1116c9b"
+    },
+    {
+      "source": "052/census/generated/final/REVIEW.json",
+      "bytes": 1312,
+      "sha256": "f000c17e7bed35a47c2b3bd216f377b34441be079fcd3e4f98d2810dd105ea18"
+    },
+    {
+      "source": "050/theory/generated/final/REVIEW.json",
+      "bytes": 1064,
+      "sha256": "ce75e5cdf25252e074e2f2e7be7aa59d5eeb809f2dc0f7e1a1b0f7b961a43f71"
+    },
+    {
+      "source": "057/quotients/generated/final/REVIEW_ja.txt",
+      "bytes": 2552,
+      "sha256": "ba1f0f4daace779222dd62d7c71da9ebb646907b4b98a0293ccb732c1e504b53"
+    }
+  ],
+  "source001_sha256": "da68f35972de56d74ac337c2673121e7fa0c4d1a5b56f41f0d91992148abb5fd",
+  "review002_zip_sha256": "39bd9231a7c0dbf8db3aaeee6c5c68d2574d3c903c50bfc8e10b92273629af90",
+  "original_archive_bindings": [
+    {
+      "source": "sources/SOURCE059.zip",
+      "bytes": 12321741,
+      "sha256": "aa7035f0570bc9ddc66da89b798cb6db8894077bf31807dbc9a0e14d33427a3a"
+    },
+    {
+      "source": "sources/SOURCE055.zip",
+      "bytes": 12163607,
+      "sha256": "23276a8843cff432163f82641391e19bd8d74abebadb60c7e2646dd83bda5438"
+    },
+    {
+      "source": "sources/SOURCE057.zip",
+      "bytes": 12274399,
+      "sha256": "af8495e28eb551001ed8c108a3978fa6975874e8ffb1b9294a45ce077cae4efa"
+    },
+    {
+      "source": "sources/SOURCE028.zip",
+      "bytes": 3287451,
+      "sha256": "e2f1774b5b160d209c6ebcb9e145401fe4a4c44c8f89edf194f15f3c05eb163a"
+    },
+    {
+      "source": "sources/SOURCE050.zip",
+      "bytes": 7633208,
+      "sha256": "2b027897c7b0afbae655956916c884d485a1bb6be6c022c0715abdfb82afa286"
+    },
+    {
+      "source": "sources/SOURCE052.zip",
+      "bytes": 11921629,
+      "sha256": "32f66b3144dc7d305f19c32d6eca4cd08ea08059f773aee81383169674a928dc"
+    }
+  ]
+}

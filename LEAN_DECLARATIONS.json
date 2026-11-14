@@ -1,0 +1,669 @@
+[
+  {
+    "declaration": "Verify.Submission.EFamily.run_first_Y",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 13,
+    "meaning_ja": "第一語Y共役の反復公式（任意k,r,s）",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.run_second_Y",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 21,
+    "meaning_ja": "第二語Y共役の反復公式（任意k,r,s）",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.run_second_y",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 29,
+    "meaning_ja": "第二語y共役の反復公式（任意k,r,s）",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.prefix_run",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 43,
+    "meaning_ja": "E_n前置きの厳密群終点",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.first_mix",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 48,
+    "meaning_ja": "第一mixで第二語xy",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.second_conjugations",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 52,
+    "meaning_ja": "第二語Y共役ブロックの終点",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.second_mix",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 57,
+    "meaning_ja": "第二mixで第一語Yxy",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.restore_second",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 66,
+    "meaning_ja": "第二語復元ブロックの終点",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.suffix_run",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 76,
+    "meaning_ja": "末尾6手で標準対",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.reaches",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 79,
+    "meaning_ja": "任意nでE_n→(x,y)",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.word_length",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 83,
+    "meaning_ja": "指定列の手数3n+12",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.canonical_reaches",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 90,
+    "meaning_ja": "canonical wordRunの終点が単文字x,y",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.EFamily.zero_initial",
+    "source": "sources/submission001/lean/Submission/EFamily.lean",
+    "line": 101,
+    "meaning_ja": "n=0の入力は(Y,xxYXy)",
+    "paper_section": "§2",
+    "claims_id": "C04",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.bridge42_length",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 16,
+    "meaning_ja": "既存bridge42列長42",
+    "paper_section": "§2",
+    "claims_id": "C02",
+    "recorded_axioms": [],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.bridge42_reaches",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 17,
+    "meaning_ja": "同列でAK3→S",
+    "paper_section": "§2",
+    "claims_id": "C02",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.bridge42_cap",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 23,
+    "meaning_ja": "全43prefixの総語長≤22",
+    "paper_section": "§2",
+    "claims_id": "C02",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.bridge42_attains22",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 25,
+    "meaning_ja": "22を実際に達成",
+    "paper_section": "§2",
+    "claims_id": "C02",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.ak3_to_S",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 27,
+    "meaning_ja": "既存bridgeでReach(A,S)",
+    "paper_section": "§3",
+    "claims_id": "C02",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.S_to_ak3",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 28,
+    "meaning_ja": "その逆列でReach(S,A)",
+    "paper_section": "§3",
+    "claims_id": "C02",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.ak3_target_iff",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 30,
+    "meaning_ja": "任意標的tに対しReach(A,t)↔Reach(S,t)",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.S_standard_iff_hit",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 35,
+    "meaning_ja": "Reach(S,標準対)↔Sからhit前置きの存在",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.member_standard",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 47,
+    "meaning_ja": "任意D_nは標準対へ到達",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.E_standard",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 49,
+    "meaning_ja": "任意E_nは標準対へ到達",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.S_member_iff_standard",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 52,
+    "meaning_ja": "Reach(S,D_n)↔Reach(S,標準対)",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.S_E_iff_standard",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 58,
+    "meaning_ja": "Reach(S,E_n)↔Reach(S,標準対)",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.ak3_E_iff_hit",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 64,
+    "meaning_ja": "Reach(A,E_n)↔Sからhit前置きの存在",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.Connections.ak3_member_iff_hit",
+    "source": "sources/submission001/lean/Submission/Connections.lean",
+    "line": 69,
+    "meaning_ja": "Reach(A,D_n)↔Sからhit前置きの存在",
+    "paper_section": "§3",
+    "claims_id": "C08",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.identity_profiles",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 39,
+    "meaning_ja": "64×64積のIプロフィール244",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.negative_identity_profiles",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 40,
+    "meaning_ja": "同−Iプロフィール16",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.viable_layouts",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 41,
+    "meaning_ja": "±I解のある配置22",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.residual_layouts",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 42,
+    "meaning_ja": "指定6名を除いた配置16",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.residual_identity_profiles",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 43,
+    "meaning_ja": "残存Iプロフィール156",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.residual_negative_profiles",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 44,
+    "meaning_ja": "残存−Iプロフィール16",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  },
+  {
+    "declaration": "Verify.Submission.SixMixFinite.residual_names",
+    "source": "sources/submission001/lean/Submission/SixMixFinite.lean",
+    "line": 45,
+    "meaning_ja": "残存16配置の名前（bit順、本文は辞書順）",
+    "paper_section": "§4",
+    "claims_id": "C07",
+    "recorded_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "review": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_revision006": false,
+    "additional_review004_scope": "seven finite declarations freshly replayed in the preserved review004",
+    "prior_review_reference_in006": "evidence/review002/formal/REVIEW_RESULT.json",
+    "release008_source_unchanged_from006": true,
+    "review007": "review007/reviewers/formal/RESULT.json",
+    "fresh_Lean_run_in_review007": true,
+    "release009_source_unchanged_from008": true
+  }
+]

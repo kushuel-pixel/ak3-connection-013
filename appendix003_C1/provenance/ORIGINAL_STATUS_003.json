@@ -1,0 +1,23 @@
+{
+  "stage": "ENGLISH_PROOF_APPENDIX_003",
+  "date": "2026-11-13",
+  "status": "READY_FOR_SEPARATE_INDEPENDENT_REVIEW",
+  "pdf_pages": 14,
+  "four_mix_claim": "S to E0; exactly four mixes implies at least 24 atomic moves; no length cap",
+  "six_mix_claim": "16 residual layouts; 156 I and 16 minus-I normalized profiles; necessary budgets only",
+  "exact_checks": "PASS; 3364 dual columns; four group maps; matrix profiles; witnesses; S10",
+  "full_B15_replay": "PASS; positive three partitions and negative one full scan; freshly recompiled preserved review implementations",
+  "new_Lean_runs": 0,
+  "new_Lean_theorems": 0,
+  "new_independent_review_of_English003": false,
+  "prior_review002_new34_accepted": true,
+  "external_publication_or_submission": false,
+  "visual_QA": {
+    "pages_rendered": 14,
+    "all_pages_visually_inspected": true,
+    "clipping_or_overlap_observed": false,
+    "undefined_references": 0,
+    "overfull_boxes": 0
+  },
+  "pdf_sha256": "e848a86bf724f39e0d2a48134793403c906c7a6ce269e9fd383049e78a5bc7fb"
+}

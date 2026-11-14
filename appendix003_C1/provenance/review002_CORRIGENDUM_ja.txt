@@ -1,0 +1,45 @@
+査読002の説明補足案
+
+対象：提出準備001の日本語PDF、2ページ目「6mixの配置分類」の継承範囲。
+元001のPDF・本文・Leanソース・実行記録は変更しない。
+
+元の表現
+「任意経路の還元・6配置を除く商群障害は査読060を継承」
+
+精密化する表現
+「任意経路からの還元と、未変更行2配置・商群4配置を除く議論は査読060を継承」
+
+6配置の内訳
+・FFFFFF / QQQQQQ：mixを受けない行の巡回長が端点で異なる。
+・FFFFQQ / FFQQQQ：第二行を殺すS10像による反転込みの非共役性。
+・QQFFFF / QQQQFF：第一行を殺すBS(3,4)による反転込みの非共役性。
+
+22配置から16配置へ絞る6削除には、未変更行の障害2件と商群の障害4件がある。
+元の英語本文はこの内訳を区別している。本補足では日本語PDFの短い表現も揃える。
+有限表の数値、Lean定理の型、4mix/6mixについての結論範囲は変わらない。
+
+English clarification
+Of the six removals from the 22 matrix-admissible layouts, two use the cyclic
+length of an untouched row and four use quotient nonconjugacy. The new Lean
+module checks the finite inventory; it does not by itself justify any of
+these six path obstructions. The original English exposition already makes
+this distinction.
+
+追跡性の補足
+scope/DECLARATION_MAP.json に新34宣言と本文節・CLAIMSの対応を添付した。
+これは有限表の適用範囲を広げるものではなく、既存の説明への入口である。
+
+到達同値の読み方
+特にE族へ至る仮想的な成功列では、その終点から既知列で標準対へ延長して
+入口命中を得る場合も含む。与えられた元の成功列の途中に命中が必ず現れる、
+という主張にはしていない。定理はSから命中へ至る何らかの前置きの存在を述べる。
+
+行列還元の説明補足（既受理060の手証明の範囲）
+両端の指数和行列はV=((0,-1),(1,0))で、det(V)=1。
+u,v∈{1,-1}、D=diag(u,v)に対して、F/Qどちらのmixでも
+ E_k(s) D = D E_k(s*u*v)
+が成立する。非mix区間の対角符号を押し出すとD_total P V=Vとなり、
+可逆性からD_total P=I。det(P)=1なのでD_total=PはI又は-Iとなる。
+この原経路の指数和像の議論が任意長gapへの還元を支え、4096の有限表だけで
+任意長経路全体を被覆したと推定しているわけではない。元の経路を別経路に
+変更して費用を短くする操作でもない。この還元自体を新Lean形式証明と呼ばない。

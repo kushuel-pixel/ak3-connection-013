@@ -1,0 +1,130 @@
+{
+  "review": "POST_CORRECTION_SCOPE_FORMAL_004",
+  "decision": "ACCEPT_003_C1_WITHIN_MATHEMATICAL_AND_FORMALIZATION_SCOPE",
+  "input_original_review_frozen": {
+    "REVIEW.json": "b51d182c4b715896a9ae1d35fa40596fa7a6c2793bec187937bf427c6acb13bf",
+    "REVIEW_ja.txt": "1ef8f89097b7db31442b40d24e0b110ee9e15293c96e56dd7afaf16a7f4254d4",
+    "original_zip": "e4cc5c1f0df16227f3b92cace998d84a9c501653b131eb3bedc69f93e09f8462"
+  },
+  "corrected_input": {
+    "pdf": "/workspace/scratch/ef84ee62aeb9/independent_review004/appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.pdf",
+    "pdf_sha256": "7d0caabdafb556df56e532402ec930d9b7d8c891def427b1954b7c4ea1ef13f3",
+    "tex": "/workspace/scratch/ef84ee62aeb9/independent_review004/appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex",
+    "tex_sha256": "9d1146a6fc8018abc0e467d538d30f74a0b11af13a0b172900ec590cbda32efc",
+    "diff": "/workspace/scratch/ef84ee62aeb9/independent_review004/correction/SOURCE003_TO_C1.diff",
+    "diff_sha256": "eee3b76a0292dc4ce5e7bd139f40398566039369ff3dd5ea34512f9481e7ed62"
+  },
+  "source_changes": [
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        10,
+        10
+      ],
+      "corrected_lines_1based": [
+        10,
+        10
+      ]
+    },
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        14,
+        14
+      ],
+      "corrected_lines_1based": [
+        14,
+        14
+      ]
+    },
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        39,
+        39
+      ],
+      "corrected_lines_1based": [
+        39,
+        39
+      ]
+    },
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        44,
+        44
+      ],
+      "corrected_lines_1based": [
+        44,
+        44
+      ]
+    },
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        503,
+        503
+      ],
+      "corrected_lines_1based": [
+        503,
+        503
+      ]
+    },
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        517,
+        518
+      ],
+      "corrected_lines_1based": [
+        517,
+        518
+      ]
+    },
+    {
+      "operation": "replace",
+      "source_lines_1based": [
+        542,
+        542
+      ],
+      "corrected_lines_1based": [
+        542,
+        542
+      ]
+    }
+  ],
+  "changes_limited_to_two_command_spaces_and_six_metadata_status_lines": true,
+  "main_theorem_statements_and_full_mathematical_development_byte_equal": true,
+  "original_DOC_01": "CLOSED; both PDF commands have visible, text-extracted spaces",
+  "status_wording": "ACCEPT; explicitly independent AI review, unchanged mathematical text/data, review-record closure, ordinary finite computations rather than new author Lean theorems",
+  "pages": 14,
+  "unchanged_body_pixel_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "changed_body_pages_visually_inspected": [
+    1,
+    12,
+    13,
+    14
+  ],
+  "new_clipping_or_overlap": false,
+  "labels_references_unchanged": true,
+  "all_named_destination_page_numbers_unchanged": true,
+  "broken_internal_destinations": [],
+  "remaining_required_corrections": [],
+  "optional_points_from_original_review_remain_optional": [
+    "ED-01",
+    "ED-02"
+  ],
+  "new_Lean_execution_for_C1": "None needed: supplied Lean/data unaffected; original fresh seven-theorem audit retained.",
+  "publication_or_submission_authorized_or_performed": false
+}

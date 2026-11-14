@@ -1,0 +1,738 @@
+{
+  "status": "PASS055_INDEPENDENT_STRING_PARTITION_FULL_POSITIVE_B15",
+  "binding": {
+    "source054_sha256": "def47bb37d0fb76b84bfe9d4bc7de2b6877462eaac268ae1e1368ebbd9d729df",
+    "members": 177,
+    "payloads": 176,
+    "all177_extracted_members_byte_equal": true,
+    "prior_archives": [
+      {
+        "stage": "053",
+        "sha256": "e6f6c7668d352a463e8da05505f7b1c1a0722fab4e175c70aa9f86a5eb54b077",
+        "bytes": 11943941,
+        "members": 12
+      },
+      {
+        "stage": "052",
+        "sha256": "32f66b3144dc7d305f19c32d6eca4cd08ea08059f773aee81383169674a928dc",
+        "bytes": 11921629,
+        "members": 43
+      },
+      {
+        "stage": "051",
+        "sha256": "01279717596f86597c05e734ea80404411c01a8bc373832befed77b149fcf0f3",
+        "bytes": 11814993,
+        "members": 19
+      },
+      {
+        "stage": "050",
+        "sha256": "2b027897c7b0afbae655956916c884d485a1bb6be6c022c0715abdfb82afa286",
+        "bytes": 7633208,
+        "members": 43
+      },
+      {
+        "stage": "049",
+        "sha256": "2dd9541a0dd74f64b54c899a69893f56ac8468be0df3f479ff91928680412653",
+        "bytes": 7542834,
+        "members": 17
+      },
+      {
+        "stage": "048",
+        "sha256": "a5f92892e4dee499cdc17fc8e88512533f3ed40b4b265f2956b1562d46479e63",
+        "bytes": 5312809,
+        "members": 42
+      },
+      {
+        "stage": "035",
+        "sha256": "ae18604037aa35ba97df2d44f28e9d410d255ff34918d29563e55170e681abfc",
+        "bytes": 4148786,
+        "members": 32
+      },
+      {
+        "stage": "034",
+        "sha256": "d59f98825e305e14c3c8bf6f3882f9335cb9873b9e195bf9cea79ef14cfc4ecd",
+        "bytes": 4077627,
+        "members": 19
+      },
+      {
+        "stage": "033",
+        "sha256": "f78cde861eb58c672ebb457ec26e5a8dd3c1ab291121db11165c8b9778d5690d",
+        "bytes": 4041739,
+        "members": 32
+      },
+      {
+        "stage": "032",
+        "sha256": "a1fc048a90e44045c550c832dc902a6faf0b3d9bcf2c0f874410bbbcc80f7229",
+        "bytes": 3976515,
+        "members": 18
+      },
+      {
+        "stage": "031",
+        "sha256": "69c30938bfc3a9c3275c62a05c4a5457ed53ecd99a0db1f73e2fd54da8432a23",
+        "bytes": 3947426,
+        "members": 10
+      },
+      {
+        "stage": "030",
+        "sha256": "d49ffd166d28465a8a6e5128d719aebf03fcc37ccd9ece3dc7c4e29abd2627bc",
+        "bytes": 3936231,
+        "members": 38
+      },
+      {
+        "stage": "029",
+        "sha256": "c6e5a094760c0eb17b95421b4feadfb86f050636f16a5cbc76e6f8143de1038c",
+        "bytes": 3845015,
+        "members": 22
+      },
+      {
+        "stage": "028",
+        "sha256": "e2f1774b5b160d209c6ebcb9e145401fe4a4c44c8f89edf194f15f3c05eb163a",
+        "bytes": 3287451,
+        "members": 164
+      },
+      {
+        "stage": "027",
+        "sha256": "0c4f7780ae2606a0e224fc4737989ac9a35c43311fd84d8897471539c61993c6",
+        "bytes": 2872881,
+        "members": 79
+      }
+    ],
+    "old052_chi0_status": "ACCEPT",
+    "original054_status": "PENDING",
+    "author_four_full_run_records": [
+      {
+        "phase": "initial",
+        "engine": "odometer",
+        "stdout_sha256": "8420b32fe6e08405fd9357e53e097cbfc4da21ff27abe76a4773541f9907f9eb",
+        "tested_each_side": 28697813,
+        "distinct_forward": 28501105,
+        "common_classes": 0
+      },
+      {
+        "phase": "full_replay",
+        "engine": "odometer",
+        "stdout_sha256": "25fc234ffa7599e858520b83b646f2e42f71f0eeb3a3cb46ef443c7928a881bc",
+        "tested_each_side": 28697813,
+        "distinct_forward": 28501105,
+        "common_classes": 0
+      },
+      {
+        "phase": "initial",
+        "engine": "recursive",
+        "stdout_sha256": "2053b2266887af9b6213a8f71e9f80ebe4b4100deb9b81c28605c065b5cfbe12",
+        "tested_each_side": 28697813,
+        "distinct_forward": 28501105,
+        "common_classes": 0
+      },
+      {
+        "phase": "full_replay",
+        "engine": "recursive",
+        "stdout_sha256": "7461d5f44c57e3fa3a5a1c4b627828c4ebe119eddf9e50934030766557505a62",
+        "tested_each_side": 28697813,
+        "distinct_forward": 28501105,
+        "common_classes": 0
+      }
+    ],
+    "author054_or_other055_code_imported_or_executed": false
+  },
+  "scanner_cpp_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+  "implementation": "fresh independent C++; exact std::string keys/unordered_set equality; fixed FNV1a64 mod3 normalized-class partition; recursive reduced-word prefix tree",
+  "partition_rule": {
+    "FNV_offset": 14695981039346656037,
+    "FNV_prime": 1099511628211,
+    "arithmetic_modulus": 18446744073709551616,
+    "class_partition_modulus": 3,
+    "std_hash_not_used_for_partition": true
+  },
+  "full_partitions": [
+    {
+      "bound": 15,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 28697813,
+      "tested_backward": 28697813,
+      "selected_forward": 9566870,
+      "selected_backward": 9558513,
+      "distinct_forward": 9501196,
+      "common_words": []
+    },
+    {
+      "bound": 15,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 28697813,
+      "tested_backward": 28697813,
+      "selected_forward": 9565094,
+      "selected_backward": 9563653,
+      "distinct_forward": 9499431,
+      "common_words": []
+    },
+    {
+      "bound": 15,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 28697813,
+      "tested_backward": 28697813,
+      "selected_forward": 9565849,
+      "selected_backward": 9575647,
+      "distinct_forward": 9500478,
+      "common_words": []
+    }
+  ],
+  "unique_conjugators_each_side": 28697813,
+  "forward_distinct_sum": 28501105,
+  "common_classes": 0,
+  "full_conjugator_evaluation_passes_each_direction": 3,
+  "distinct_partitions_disjoint_and_cover": true,
+  "small_oracle_partitions": [
+    {
+      "bound": 0,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 1,
+      "tested_backward": 1,
+      "selected_forward": 1,
+      "selected_backward": 0,
+      "distinct_forward": 1,
+      "common_words": []
+    },
+    {
+      "bound": 0,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 1,
+      "tested_backward": 1,
+      "selected_forward": 0,
+      "selected_backward": 0,
+      "distinct_forward": 0,
+      "common_words": []
+    },
+    {
+      "bound": 0,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 1,
+      "tested_backward": 1,
+      "selected_forward": 0,
+      "selected_backward": 1,
+      "distinct_forward": 0,
+      "common_words": []
+    },
+    {
+      "bound": 1,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 5,
+      "tested_backward": 5,
+      "selected_forward": 4,
+      "selected_backward": 1,
+      "distinct_forward": 4,
+      "common_words": []
+    },
+    {
+      "bound": 1,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 5,
+      "tested_backward": 5,
+      "selected_forward": 1,
+      "selected_backward": 1,
+      "distinct_forward": 1,
+      "common_words": []
+    },
+    {
+      "bound": 1,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 5,
+      "tested_backward": 5,
+      "selected_forward": 0,
+      "selected_backward": 3,
+      "distinct_forward": 0,
+      "common_words": []
+    },
+    {
+      "bound": 2,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 17,
+      "tested_backward": 17,
+      "selected_forward": 10,
+      "selected_backward": 6,
+      "distinct_forward": 10,
+      "common_words": []
+    },
+    {
+      "bound": 2,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 17,
+      "tested_backward": 17,
+      "selected_forward": 4,
+      "selected_backward": 4,
+      "distinct_forward": 4,
+      "common_words": []
+    },
+    {
+      "bound": 2,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 17,
+      "tested_backward": 17,
+      "selected_forward": 3,
+      "selected_backward": 7,
+      "distinct_forward": 3,
+      "common_words": []
+    },
+    {
+      "bound": 3,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 53,
+      "tested_backward": 53,
+      "selected_forward": 20,
+      "selected_backward": 17,
+      "distinct_forward": 20,
+      "common_words": []
+    },
+    {
+      "bound": 3,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 53,
+      "tested_backward": 53,
+      "selected_forward": 19,
+      "selected_backward": 16,
+      "distinct_forward": 19,
+      "common_words": []
+    },
+    {
+      "bound": 3,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 53,
+      "tested_backward": 53,
+      "selected_forward": 14,
+      "selected_backward": 20,
+      "distinct_forward": 14,
+      "common_words": []
+    },
+    {
+      "bound": 4,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 161,
+      "tested_backward": 161,
+      "selected_forward": 54,
+      "selected_backward": 44,
+      "distinct_forward": 54,
+      "common_words": []
+    },
+    {
+      "bound": 4,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 161,
+      "tested_backward": 161,
+      "selected_forward": 64,
+      "selected_backward": 55,
+      "distinct_forward": 64,
+      "common_words": []
+    },
+    {
+      "bound": 4,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 161,
+      "tested_backward": 161,
+      "selected_forward": 43,
+      "selected_backward": 62,
+      "distinct_forward": 43,
+      "common_words": []
+    },
+    {
+      "bound": 5,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 485,
+      "tested_backward": 485,
+      "selected_forward": 162,
+      "selected_backward": 137,
+      "distinct_forward": 161,
+      "common_words": []
+    },
+    {
+      "bound": 5,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 485,
+      "tested_backward": 485,
+      "selected_forward": 182,
+      "selected_backward": 163,
+      "distinct_forward": 181,
+      "common_words": []
+    },
+    {
+      "bound": 5,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 485,
+      "tested_backward": 485,
+      "selected_forward": 141,
+      "selected_backward": 185,
+      "distinct_forward": 141,
+      "common_words": []
+    },
+    {
+      "bound": 6,
+      "partition": 0,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 1457,
+      "tested_backward": 1457,
+      "selected_forward": 483,
+      "selected_backward": 438,
+      "distinct_forward": 482,
+      "common_words": []
+    },
+    {
+      "bound": 6,
+      "partition": 1,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 1457,
+      "tested_backward": 1457,
+      "selected_forward": 498,
+      "selected_backward": 481,
+      "distinct_forward": 493,
+      "common_words": []
+    },
+    {
+      "bound": 6,
+      "partition": 2,
+      "partition_modulus": 3,
+      "partition_hash": "FNV1a64",
+      "kind": "F",
+      "outer_sign": 1,
+      "target": "E0",
+      "source_factors": [
+        "XyyyxYYYY",
+        "XyyyyyxxYYYYY"
+      ],
+      "target_factors": [
+        "Y",
+        "XyxxY"
+      ],
+      "tested_forward": 1457,
+      "tested_backward": 1457,
+      "selected_forward": 476,
+      "selected_backward": 538,
+      "distinct_forward": 474,
+      "common_words": []
+    }
+  ],
+  "normalization_controls": 5626,
+  "normalization_input_sha256": "2945a68829eac17564985c2085027ec256f002b4bf330a7b78edb5aac9e5b347",
+  "enumeration_B6_unique_words": 1457,
+  "rejected_mutations": [
+    "native_B16",
+    "native_partition3",
+    "native_negativeB",
+    "native_alphabet",
+    "missing_partition",
+    "duplicate_partition",
+    "wrong_sign",
+    "wrong_kind",
+    "wrong_target",
+    "wrong_bound",
+    "wrong_count",
+    "wrong_hash_partition",
+    "wrong_distinct_sum",
+    "false_noncanonical_or_wrong_partition_common"
+  ],
+  "rejection_count": 14,
+  "freshly_compiled_scanner_used": true,
+  "provided_ELF_used": false,
+  "full_Q15_scan_executed": false,
+  "general_N32_and_path_theorem_dependencies": [
+    "separate055 theory arbitrary-factor bound and positive F/Q identity",
+    "separate055 scope all-sign path join/cost"
+  ],
+  "author054_or_other055_mathematical_code_executed": false,
+  "new_Lean_runs": 0,
+  "remote_reads_or_writes": 0
+}

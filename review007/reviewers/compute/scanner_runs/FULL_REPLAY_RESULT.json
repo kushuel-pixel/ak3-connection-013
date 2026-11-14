@@ -1,0 +1,112 @@
+{
+  "edition": "Public extract of the review 007 scanner runs. Executable names and arguments, resource measurements and hashes are preserved.",
+  "original_sha256": "058847add887fb73ad6434c5f288301ebbded8b32ea17b595cd60b0840690e3c",
+  "status": "PASS_FRESH_REPLAY_OF_PRESERVED_SCANNERS",
+  "new_independent_full_scanner_implementation": false,
+  "sequential_runs": true,
+  "runs": [
+    {
+      "label": "full_positive_0",
+      "argv": [
+        "positive",
+        "--scan",
+        "15",
+        "0"
+      ],
+      "started_unix": 1794653678.746352,
+      "exit_code": 0,
+      "wall_timeout": false,
+      "wall_seconds": 29.163980103000085,
+      "cpu_user_seconds": 28.801211,
+      "cpu_system_seconds": 0.32198,
+      "max_rss_KiB": 1284000,
+      "resource_limits": {
+        "AS_bytes": 4294967296,
+        "CPU_soft_seconds": 90,
+        "CPU_hard_seconds": 91,
+        "wall_seconds": 150
+      },
+      "stdout_sha256": "d361d7ab4a95ca1d5d481d39beb0fd90edfd74ad18f4c75666d16b83b1b3201a",
+      "stderr_sha256": "62b6cf8c83a363591fb876da903d15f120e98f0280c8908107c9a3832c790546",
+      "source_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+      "executable_sha256": "3b3aa00799e24a566c67a77d0c82f4130802a92276366c82764c1a541efe2a6b"
+    },
+    {
+      "label": "full_positive_1",
+      "argv": [
+        "positive",
+        "--scan",
+        "15",
+        "1"
+      ],
+      "started_unix": 1794653707.9110632,
+      "exit_code": 0,
+      "wall_timeout": false,
+      "wall_seconds": 29.209474620000037,
+      "cpu_user_seconds": 28.830814,
+      "cpu_system_seconds": 0.339986,
+      "max_rss_KiB": 1282684,
+      "resource_limits": {
+        "AS_bytes": 4294967296,
+        "CPU_soft_seconds": 90,
+        "CPU_hard_seconds": 91,
+        "wall_seconds": 150
+      },
+      "stdout_sha256": "632f31a18025cab3cf401166c8ca73bfc22faa92842119819e08200c3d127924",
+      "stderr_sha256": "7d1638eda612d4c4597aa75e358b4db482fa093262ac6733631668190ec01e78",
+      "source_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+      "executable_sha256": "3b3aa00799e24a566c67a77d0c82f4130802a92276366c82764c1a541efe2a6b"
+    },
+    {
+      "label": "full_positive_2",
+      "argv": [
+        "positive",
+        "--scan",
+        "15",
+        "2"
+      ],
+      "started_unix": 1794653737.121592,
+      "exit_code": 0,
+      "wall_timeout": false,
+      "wall_seconds": 28.91736557999957,
+      "cpu_user_seconds": 28.497449,
+      "cpu_system_seconds": 0.375979,
+      "max_rss_KiB": 1284192,
+      "resource_limits": {
+        "AS_bytes": 4294967296,
+        "CPU_soft_seconds": 90,
+        "CPU_hard_seconds": 91,
+        "wall_seconds": 150
+      },
+      "stdout_sha256": "6634316d199a91f6c46a0b018ae633f63769f2364383a785a9ab146e9d29c679",
+      "stderr_sha256": "a3cff71fca80b0310973966f05d42e11a3ab7aa5b516d13f1a969f40cf22c1be",
+      "source_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+      "executable_sha256": "3b3aa00799e24a566c67a77d0c82f4130802a92276366c82764c1a541efe2a6b"
+    },
+    {
+      "label": "full_negative",
+      "argv": [
+        "negative",
+        "15"
+      ],
+      "started_unix": 1794653766.0392778,
+      "exit_code": 0,
+      "wall_timeout": false,
+      "wall_seconds": 20.74113890300032,
+      "cpu_user_seconds": 20.442908,
+      "cpu_system_seconds": 0.271012,
+      "max_rss_KiB": 900572,
+      "resource_limits": {
+        "AS_bytes": 4294967296,
+        "CPU_soft_seconds": 90,
+        "CPU_hard_seconds": 91,
+        "wall_seconds": 150
+      },
+      "stdout_sha256": "d9772df3317348b28d8c3266c297d016151a18622509dbcaad6d28bdc75859ac",
+      "stderr_sha256": "0c2dbba42c74374dbfa1e6ac8ca81445259c803c02fa75ba1ceee50be5f315d6",
+      "source_sha256": "19cbc94938420ca6926ec8d0859891e3bbfa950dd9fc1da909e85562591d0d79",
+      "executable_sha256": "e041d65ae5e01ff39d2dbb949965645eec81476dc902a9ebebd95a05a86cb758"
+    }
+  ],
+  "limits_raised": false
+}

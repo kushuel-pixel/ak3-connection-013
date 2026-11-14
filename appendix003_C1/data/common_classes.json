@@ -1,0 +1,157 @@
+{
+  "factors": [
+    "XyyyxYYYY",
+    "yyyyyXXYYYYYx",
+    "Y",
+    "yXXYx"
+  ],
+  "classes": [
+    {
+      "word": "XXYYxy",
+      "cyclic_length": 6,
+      "C_parameters": [
+        0,
+        0
+      ],
+      "W_parameter": -1,
+      "F_witnesses": {
+        "u": "",
+        "v": "x",
+        "lengths": [
+          0,
+          1
+        ]
+      },
+      "Q_inverse_class": "XyyxxY",
+      "normal_closure_same_after_conjugacy_or_inversion": true,
+      "central_obstruction": {
+        "accepted_stage": "033",
+        "scope": "all integer W_k",
+        "base_inheritance": "U1/020",
+        "directions": {
+          "FQQF": [
+            "S_second",
+            "E0_second"
+          ],
+          "QFFQ": [
+            "S_first",
+            "E0_first"
+          ]
+        },
+        "inner_conjugator_length_bound": null
+      }
+    },
+    {
+      "word": "XXYxYYYYXYxyyyyy",
+      "cyclic_length": 16,
+      "C_parameters": [
+        0,
+        1
+      ],
+      "W_parameter": 0,
+      "F_witnesses": {
+        "u": "XYx",
+        "v": "xyyyy",
+        "lengths": [
+          3,
+          5
+        ]
+      },
+      "Q_inverse_class": "XyxxYYYYYXyxyyyy",
+      "normal_closure_same_after_conjugacy_or_inversion": true,
+      "central_obstruction": {
+        "accepted_stage": "033",
+        "scope": "all integer W_k",
+        "base_inheritance": "U2/023/028",
+        "directions": {
+          "FQQF": [
+            "S_second",
+            "E0_second"
+          ],
+          "QFFQ": [
+            "S_first",
+            "E0_first"
+          ]
+        },
+        "inner_conjugator_length_bound": null
+      }
+    },
+    {
+      "word": "XXYYYYYxyyyyXYxYYYYXyyyyxy",
+      "cyclic_length": 26,
+      "C_parameters": [
+        0,
+        -1
+      ],
+      "W_parameter": -2,
+      "F_witnesses": {
+        "u": "XyyyyxYYYY",
+        "v": "xYYYYXyyyyx",
+        "lengths": [
+          10,
+          11
+        ]
+      },
+      "Q_inverse_class": "XYYYYxyyyyXyxYYYYXyyyyyxxY",
+      "normal_closure_same_after_conjugacy_or_inversion": true,
+      "central_obstruction": {
+        "accepted_stage": "033",
+        "scope": "all integer W_k",
+        "base_inheritance": null,
+        "directions": {
+          "FQQF": [
+            "S_second",
+            "E0_second"
+          ],
+          "QFFQ": [
+            "S_first",
+            "E0_first"
+          ]
+        },
+        "inner_conjugator_length_bound": null
+      }
+    },
+    {
+      "word": "XXYYYYxyyyyyXXYxxYYYYYXyyyxy",
+      "cyclic_length": 28,
+      "C_parameters": [
+        1,
+        -1
+      ],
+      "W_parameter": null,
+      "F_witnesses": {
+        "u": "yyyyyXXYYYYx",
+        "v": "xxYYYYYXyyyx",
+        "lengths": [
+          12,
+          12
+        ]
+      },
+      "Q_inverse_class": "XXyxxYYYYYXyyyyxxYXYYYxyyyyy",
+      "normal_closure_same_after_conjugacy_or_inversion": true,
+      "central_obstruction": {
+        "accepted_stage": "035",
+        "scope": "all odd j,t in C_(j,t)",
+        "base_inheritance": null,
+        "directions": {
+          "FQQF": [
+            "S_second",
+            "E0_second"
+          ],
+          "QFFQ": [
+            "S_first",
+            "E0_first"
+          ]
+        },
+        "inner_conjugator_length_bound": null
+      }
+    }
+  ],
+  "outside_length32": [
+    {
+      "word": "XXYxYYYYXyyyyxYYYYXYxyyyyXYYYYxyyyyy",
+      "cyclic_length": 36,
+      "reason": "length exceeds32; not a missing member of G32"
+    }
+  ]
+}

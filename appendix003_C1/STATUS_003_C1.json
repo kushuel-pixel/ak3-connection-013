@@ -1,0 +1,12 @@
+{
+  "version": "003-C1",
+  "review": "004",
+  "decision": "ACCEPT_CORRECTED_003_C1_WITHIN_STATED_SCOPE",
+  "remaining_required_corrections": 0,
+  "mathematical_changes": 0,
+  "document_command_occurrences_fixed": 2,
+  "pdf_pages": 14,
+  "pdf_sha256": "7d0caabdafb556df56e532402ec930d9b7d8c891def427b1954b7c4ea1ef13f3",
+  "tex_sha256": "9d1146a6fc8018abc0e467d538d30f74a0b11af13a0b172900ec590cbda32efc",
+  "preserved_author_preparation_outputs": "verification/ contains the original003 author replay; independent004 outputs are in ../compute and ../scope_formal."
+}

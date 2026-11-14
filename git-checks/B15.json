@@ -1,0 +1,61 @@
+{
+  "status": "PASS_FRESH_AUTHOR_REPLAY_OF_REVIEW028_055_SCANNERS",
+  "runs": [
+    {
+      "case": "positive0",
+      "exit_code": 0,
+      "elapsed_seconds": 29.657,
+      "source_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+      "stdout_sha256": "d361d7ab4a95ca1d5d481d39beb0fd90edfd74ad18f4c75666d16b83b1b3201a",
+      "stderr_sha256": "62b6cf8c83a363591fb876da903d15f120e98f0280c8908107c9a3832c790546",
+      "unique_conjugators_each_side": 28697813,
+      "distinct_forward": 9501196,
+      "common_classes": 0
+    },
+    {
+      "case": "positive1",
+      "exit_code": 0,
+      "elapsed_seconds": 29.772,
+      "source_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+      "stdout_sha256": "632f31a18025cab3cf401166c8ca73bfc22faa92842119819e08200c3d127924",
+      "stderr_sha256": "7d1638eda612d4c4597aa75e358b4db482fa093262ac6733631668190ec01e78",
+      "unique_conjugators_each_side": 28697813,
+      "distinct_forward": 9499431,
+      "common_classes": 0
+    },
+    {
+      "case": "positive2",
+      "exit_code": 0,
+      "elapsed_seconds": 29.5,
+      "source_sha256": "30008dc9661c93f45a094019ca5398caa02f24d6da723a7012a2474c38770493",
+      "stdout_sha256": "6634316d199a91f6c46a0b018ae633f63769f2364383a785a9ab146e9d29c679",
+      "stderr_sha256": "a3cff71fca80b0310973966f05d42e11a3ab7aa5b516d13f1a969f40cf22c1be",
+      "unique_conjugators_each_side": 28697813,
+      "distinct_forward": 9500478,
+      "common_classes": 0
+    },
+    {
+      "case": "negative",
+      "exit_code": 0,
+      "elapsed_seconds": 20.753,
+      "source_sha256": "19cbc94938420ca6926ec8d0859891e3bbfa950dd9fc1da909e85562591d0d79",
+      "stdout_sha256": "34e85f15315d18bd550dcc6d1c1c218559b417b6c19c770821839c03c11f1e10",
+      "stderr_sha256": "0c2dbba42c74374dbfa1e6ac8ca81445259c803c02fa75ba1ceee50be5f315d6",
+      "unique_conjugators_each_side": 28697813,
+      "distinct_forward": 28501106,
+      "common_classes": 5
+    }
+  ],
+  "positive_distinct_forward_sum": 28501105,
+  "positive_common_classes": 0,
+  "negative_common_classes": 5,
+  "negative_common_classes_length_at_most32": 4,
+  "address_space_bytes_per_child": 4294967296,
+  "CPU_soft_hard_seconds": [
+    90,
+    91
+  ],
+  "wall_timeout_seconds_per_child": 150,
+  "full_negative_and_three_positive_partitions_completed": true,
+  "new_independent_review_of_appendix003": false
+}

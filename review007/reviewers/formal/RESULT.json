@@ -1,0 +1,77 @@
+{
+  "edition": "Public extract of the original review 007 record for manuscript 006",
+  "original_sha256": "5015d221564c8155c07fa5d8ad3aec594cf1a23483da5446a3f01ced9939e919",
+  "review_id": "AK3_INTEGRATED006_INDEPENDENT_FORMAL_REVIEW007",
+  "reviewer_role": "Lean/type/scope",
+  "decision": "PASS_WITHIN_FORMAL_SCOPE",
+  "required_corrections": [],
+  "optional_corrections": [],
+  "checks": {
+    "fresh_local_source_build": {
+      "modules": 31,
+      "all_pass": true,
+      "fresh_full_Mathlib_source_build": false,
+      "import_DAG": "LOCAL_IMPORT_DAG.json"
+    },
+    "complete_type_ascriptions": {
+      "new": 34,
+      "EFamily": 13,
+      "Connections": 14,
+      "SixMixFinite": 7,
+      "inherited_four_way": 4,
+      "passed": true,
+      "fixture": "src/ReviewerTypes.lean"
+    },
+    "exact_axiom_sets": {
+      "count": 34,
+      "all_allowed": true,
+      "frequencies": {
+        "Quot.sound,propext": 16,
+        "Classical.choice,Quot.sound,propext": 17,
+        "": 1
+      },
+      "evidence": "AXIOM_AUDIT.json"
+    },
+    "semantic_positive_fixtures": {
+      "check": "positive_semantics",
+      "passed": true,
+      "example_count": 20
+    },
+    "meaningful_negative_controls": {
+      "count": 6,
+      "all_intended_rejections": true,
+      "resource_import_parsing_failures": 0,
+      "evidence": "CONTROL_RESULT.json"
+    },
+    "selected_kernel_replays": {
+      "count": 3,
+      "all_pass": true,
+      "modules": [
+        "Submission.EFamily",
+        "Submission.Connections",
+        "Submission.SixMixFinite"
+      ],
+      "same_default_kernel": true,
+      "external_imported_environment_trusted": true,
+      "fresh_all_imports": false,
+      "internal_j_M_flags_ignored": true,
+      "external_AS_CPU_wall_limits_enforced": true,
+      "evidence": "KERNEL_REPLAY_RESULT.json"
+    }
+  },
+  "scope_boundaries": [
+    "All-natural n includes0 for E/D endpoints and move lengths; peak4n+10 remains hand proof.",
+    "General FourWayHit requires UnitDet ±1; both signs of either generator in either cyclically reduced relator are covered.",
+    "Original14 valid atomic IDs and ordered endpoint semantics; rows/generators mapped through real words, not free atomic operations.",
+    "Unbounded existential equivalences create no successful S-prefix and preserve no budget/cap/minimality.",
+    "Seven SixMixFinite declarations certify only finite matrix census; arbitrary-path projection/exclusions/quotients are hand proofs.",
+    "No full four/six-mix path theorem, AK3 trivialization, global23-move exclusion, novelty audit, or external human peer review."
+  ],
+  "trust_boundary": [
+    "Existing runtime Lean4.35.0 commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc and fixed external package caches reused read-only.",
+    "All9 dependency Git HEADs match manifest and tracked source clean;8 package olean directories available; no Cli cache and no needed import of Cli.",
+    "No measurement/hash provenance of every actually loaded external cache module, and no full external source rebuild.",
+    "leanchecker is the same default kernel implementation and selected replayFromImports, not independent implementation.",
+    "Original author verifier depends on unavailable historical provenance/build-order material; this review independently derives its bounded local closure and does not assert exact author-command replay."
+  ]
+}

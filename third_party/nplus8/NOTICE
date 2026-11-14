@@ -1,0 +1,24 @@
+n+8 Lean verification package
+Copyright 2026 kushuel
+
+The 17 Lean source/check files and 3 version-pinning configuration files
+listed in LICENSING.md are offered under the Apache License, Version 2.0
+to the extent the licensor is authorized to license them. See LICENSE.
+
+The three additional code files under ../../verification/ are also offered
+under Apache-2.0; see ../../LICENSING.md for the full 23-file scope.
+
+The configuration files may contain tool-generated or standard template
+material. No claim of original authorship is made over those files as a
+whole. Third-party rights and existing terms are preserved.
+
+This package was prepared with AI assistance. The human/AI roles and the
+verification limits are described in ../../AI_USE.md and README.md.
+
+Lean, Mathlib, and other dependencies are separate third-party works and
+remain subject to their own licenses and notices. Their implementations
+and runtime binaries are not bundled in this package.
+
+The historical source/check files are retained byte-for-byte for provenance
+verification; this notice and LICENSING.md provide their package-level
+attribution and license identification.

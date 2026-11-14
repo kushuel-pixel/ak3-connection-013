@@ -1,0 +1,167 @@
+{
+  "count": 34,
+  "exact_sets": {
+    "Verify.Submission.EFamily.run_first_Y": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.run_second_Y": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.run_second_y": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.prefix_run": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.first_mix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.second_conjugations": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.second_mix": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.restore_second": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.suffix_run": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.reaches": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.word_length": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.canonical_reaches": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.EFamily.zero_initial": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.bridge42_length": [],
+    "Verify.Submission.Connections.bridge42_reaches": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.bridge42_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.bridge42_attains22": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.ak3_to_S": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.S_to_ak3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.ak3_target_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.S_standard_iff_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.member_standard": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.E_standard": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.S_member_iff_standard": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.S_E_iff_standard": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.ak3_E_iff_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.Connections.ak3_member_iff_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.identity_profiles": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.negative_identity_profiles": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.viable_layouts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.residual_layouts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.residual_identity_profiles": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.residual_negative_profiles": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Verify.Submission.SixMixFinite.residual_names": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "allowed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "no_sorryAx_or_custom_axiom": true,
+  "set_frequencies": {
+    "Quot.sound,propext": 16,
+    "Classical.choice,Quot.sound,propext": 17,
+    "": 1
+  },
+  "stdout_sha256": "5b0024b7a2dfe324fafe9f9c4ed60f211bc054948380f57ecc2f4c02a0e6b2ba"
+}

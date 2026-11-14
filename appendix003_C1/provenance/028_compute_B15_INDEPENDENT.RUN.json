@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/workspace/scratch/6577780694f9/review028/compute/independent_gate",
+    "15"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "error": null,
+  "wall_seconds": 20.877980806000096,
+  "cpu_user_seconds": 19.581978,
+  "cpu_system_seconds": 1.2604980000000001,
+  "peak_rss_kib": 898304,
+  "AS_soft_hard_bytes": [
+    4294967296,
+    4294967296
+  ],
+  "CPU_soft_hard_seconds": [
+    90,
+    91
+  ],
+  "wall_timeout_seconds": 150,
+  "stdout_sha256": "9de7eac362b33f4c2c38d1850e2b71da1bac0b41d85f5e943465bd7b1a79bb01",
+  "stderr_sha256": "0c2dbba42c74374dbfa1e6ac8ca81445259c803c02fa75ba1ceee50be5f315d6"
+}

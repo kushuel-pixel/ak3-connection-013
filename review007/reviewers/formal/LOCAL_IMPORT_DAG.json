@@ -1,0 +1,189 @@
+{
+  "roots": [
+    "Submission.EFamily",
+    "Submission.Connections",
+    "Submission.SixMixFinite"
+  ],
+  "order": [
+    "Verify.Basic",
+    "Verify.ResearchWords",
+    "Verify.ReducedWords",
+    "Verify.ReducedC",
+    "Verify.CRightCancellation",
+    "Verify.RCoreObstruction",
+    "Verify.ROperationConnection",
+    "Verify.AtomicSemantics",
+    "Verify.SevenPrefix",
+    "Submission.EFamily",
+    "Adjacent.Family",
+    "Adjacent.Transport",
+    "Entry.OneRelator",
+    "Entry.FamilyGate",
+    "Verify.PermutationFixedPoint",
+    "Verify.PermutationFixedPointNielsen",
+    "Verify.AK3Mod5FixedPoint",
+    "Verify.AK3Mod5FixedPointAdapter",
+    "Entry.FromS",
+    "Verify.AK3SecondComponentTrace",
+    "Verify.AK3D3HRowClassifier",
+    "Verify.AK3D3HRowConnection",
+    "Entry.FixedTargets",
+    "Entry.ClassHit",
+    "CountedHit",
+    "Extension.UnitGate",
+    "Verify.AK3D3BranchConnection",
+    "Extension.Symmetries",
+    "Extension.FourWay",
+    "Submission.Connections",
+    "Submission.SixMixFinite"
+  ],
+  "local_edges": {
+    "Verify.Basic": [
+      "Mathlib.GroupTheory.FreeGroup.CyclicallyReduced",
+      "Mathlib.Algebra.Group.Conj",
+      "Mathlib.Tactic.Group",
+      "Mathlib.Tactic.IntervalCases"
+    ],
+    "Verify.ResearchWords": [
+      "Verify.Basic"
+    ],
+    "Verify.ReducedWords": [
+      "Verify.ResearchWords"
+    ],
+    "Verify.ReducedC": [
+      "Verify.ReducedWords"
+    ],
+    "Verify.CRightCancellation": [
+      "Verify.ReducedC"
+    ],
+    "Verify.RCoreObstruction": [
+      "Verify.CRightCancellation"
+    ],
+    "Verify.ROperationConnection": [
+      "Verify.RCoreObstruction"
+    ],
+    "Verify.AtomicSemantics": [
+      "Verify.ROperationConnection"
+    ],
+    "Verify.SevenPrefix": [
+      "Verify.AtomicSemantics"
+    ],
+    "Submission.EFamily": [
+      "Verify.SevenPrefix"
+    ],
+    "Adjacent.Family": [
+      "Verify.SevenPrefix"
+    ],
+    "Adjacent.Transport": [
+      "Adjacent.Family"
+    ],
+    "Entry.OneRelator": [
+      "Adjacent.Transport"
+    ],
+    "Entry.FamilyGate": [
+      "Entry.OneRelator"
+    ],
+    "Verify.PermutationFixedPoint": [
+      "Mathlib.Algebra.Group.End"
+    ],
+    "Verify.PermutationFixedPointNielsen": [
+      "Verify.PermutationFixedPoint"
+    ],
+    "Verify.AK3Mod5FixedPoint": [
+      "Verify.PermutationFixedPointNielsen",
+      "Mathlib.Tactic.IntervalCases"
+    ],
+    "Verify.AK3Mod5FixedPointAdapter": [
+      "Verify.AtomicSemantics",
+      "Verify.AK3Mod5FixedPoint"
+    ],
+    "Entry.FromS": [
+      "Entry.FamilyGate",
+      "Verify.AK3Mod5FixedPointAdapter",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Verify.AK3SecondComponentTrace": [
+      "Verify.AK3Mod5FixedPointAdapter"
+    ],
+    "Verify.AK3D3HRowClassifier": [
+      "Verify.AK3SecondComponentTrace"
+    ],
+    "Verify.AK3D3HRowConnection": [
+      "Verify.AK3D3HRowClassifier"
+    ],
+    "Entry.FixedTargets": [
+      "Entry.FromS",
+      "Verify.AK3D3HRowConnection"
+    ],
+    "Entry.ClassHit": [
+      "Entry.FixedTargets"
+    ],
+    "CountedHit": [
+      "Entry.ClassHit",
+      "Mathlib.GroupTheory.FreeGroup.CyclicallyReduced"
+    ],
+    "Extension.UnitGate": [
+      "CountedHit"
+    ],
+    "Verify.AK3D3BranchConnection": [
+      "Verify.AK3D3HRowConnection"
+    ],
+    "Extension.Symmetries": [
+      "Extension.UnitGate",
+      "Verify.AK3D3BranchConnection"
+    ],
+    "Extension.FourWay": [
+      "Extension.Symmetries"
+    ],
+    "Submission.Connections": [
+      "Extension.FourWay",
+      "Submission.EFamily"
+    ],
+    "Submission.SixMixFinite": [
+      "Std"
+    ]
+  },
+  "external_import_roots": [
+    "Mathlib.Algebra.Group.Conj",
+    "Mathlib.Algebra.Group.End",
+    "Mathlib.GroupTheory.FreeGroup.CyclicallyReduced",
+    "Mathlib.Tactic.Group",
+    "Mathlib.Tactic.IntervalCases",
+    "Mathlib.Tactic.Ring",
+    "Std"
+  ],
+  "source_hashes": {
+    "Verify.Basic": "5fa2b05ba353fb365b4ddac176f7c9d9128c3ff2d91d40f2bffbca0320a947a1",
+    "Verify.ResearchWords": "a9f87c39bae3c0dabde9cae59657f59d0a78fb59be1fc72dbb5ed51b15e90e09",
+    "Verify.ReducedWords": "122dcdc33930d91055788723003001437be52e3fe7c34e702bb26ae33a9ec763",
+    "Verify.ReducedC": "2a1888ac1fa5f3c9d4d67541307cd4682d7b16cb041634399b43c0a561e77977",
+    "Verify.CRightCancellation": "ed89743f7f5052d0c20dc73235022e20c2d967d3e906cce38919467a7e5d46db",
+    "Verify.RCoreObstruction": "0da038a7c2c9f8afd0b90c7e608974490a7be072d6e5fa8bd442bde4c0e6b0e1",
+    "Verify.ROperationConnection": "503d1c44f911edc9196a1f9e5b83172b43bf4f0ce1e24dfee8e4fdfd1f252e71",
+    "Verify.AtomicSemantics": "032837b5f68997f1b2428b7310978577bfd031747ace811ca2949f5332879ee3",
+    "Verify.SevenPrefix": "ed9b6f7f88e68c7dc0eb11895b3371f8344f36c541bee1ac46781cbdca37c74a",
+    "Submission.EFamily": "f45b5bb321cd4ba1c362cc3823737a0ea801f45c6575fb329cf34ebce947d1a1",
+    "Adjacent.Family": "24debe483c6850a3c1165b9b9d1e93932b76375f4f2fe2587bc2a873c7ec3111",
+    "Adjacent.Transport": "da81e07d7b82b0ec68feb1fda4571fcd6ab8e120147d988b422878b5207501fe",
+    "Entry.OneRelator": "bd32fd7ed428c77e10fe434943e5ee716f628b0d787cd916817c9835dc9a8cc8",
+    "Entry.FamilyGate": "a1286dd2eaf670253a59d24b744e90238450b74d50275c7989f8b4e2406cdfd9",
+    "Verify.PermutationFixedPoint": "4847463af7b03214bac4e987047bb76f4dc202c6b59b07f14652e8e066909b3c",
+    "Verify.PermutationFixedPointNielsen": "b57af1550b08f8b6a295b4d0b12952f7721dfa13d49cfb9aa9dc67e99ecc5746",
+    "Verify.AK3Mod5FixedPoint": "46ba9edee34dbb6208a69b45245255f76cc3edb7a194e53c0cb286087adb37ae",
+    "Verify.AK3Mod5FixedPointAdapter": "3b743ec68da552c1009e516552703e0fb313fc4ebf0b34d8ff2b19517589b8d4",
+    "Entry.FromS": "fede6f78240b0fae132942d383997173ee44875881cfdd24cdc4372688d00721",
+    "Verify.AK3SecondComponentTrace": "27c7f914ab0a1c3d78599752cc884b8db065747e5fc5691b4e36d61f94c3e219",
+    "Verify.AK3D3HRowClassifier": "c0902a60e03be0f729c7a1c05270d2946fd441c9cf7db08e0f61170c1c8daadf",
+    "Verify.AK3D3HRowConnection": "018848f01f9aff3f04c038de8e9ed7f829d2f9c8286f22f5b5c4f50ae9907960",
+    "Entry.FixedTargets": "e23a0b285b430be71d11753e16c509e650a205c2194a88db4297aa3ceff29deb",
+    "Entry.ClassHit": "336f2c5bcc87d2cd3f82a1f67774b1855a27327a09ce4ef282cb8bc46ab4ca66",
+    "CountedHit": "63a68ebcc6990006e0dc0c4f290ec77b7b9b452c21da5f99cc36ae0dbdd9b9cc",
+    "Extension.UnitGate": "c6bf6198577e4bde29b22f1fbcb0a16ff40c09ed0738bd4976fec9f4bb411df4",
+    "Verify.AK3D3BranchConnection": "b38d738211cbcc71c6274cd8b6b129293407a7d16b5c89533fa2abe4f97bdadf",
+    "Extension.Symmetries": "6e9efb6009dd999c8afc24df768b88bb44a91f0d0a184d50e645b0efca53f751",
+    "Extension.FourWay": "f515d4f6c8fe6c9548fff2183bec496a6de71dec7e737ac3d5c84e63753d86a2",
+    "Submission.Connections": "dd48dc2dbaa0fe4abeb6bc8f0487031adb8639d6992d72d0a265d77172c2ed09",
+    "Submission.SixMixFinite": "7449454fd52a562f8c0e93e8200be1bbaf04945eea29d358ebc47b1dd59ec41a"
+  },
+  "not_author_build_order": true
+}

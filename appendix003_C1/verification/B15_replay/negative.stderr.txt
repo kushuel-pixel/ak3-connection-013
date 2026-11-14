@@ -1,0 +1,1 @@
+FORWARD count=28697813 distinct=28501106

@@ -1,0 +1,181 @@
+{
+  "review": "INDEPENDENT_AI_REVIEW_004_OF_ENGLISH_APPENDIX003",
+  "date": "2026-11-13",
+  "decision": "ACCEPT_CORRECTED_003_C1_WITHIN_STATED_SCOPE",
+  "reviewer_contexts": 3,
+  "source003": {
+    "library_file_id": "libfile_b2b0acbbdb688191afee19778271cd9b",
+    "zip_filename": "AK3_CONNECTION_SUBMISSION_4MIX_6MIX_ENGLISH_APPENDIX_003_2026-11-13.zip",
+    "zip_sha256": "e4cc5c1f0df16227f3b92cace998d84a9c501653b131eb3bedc69f93e09f8462",
+    "bytes": 414022,
+    "preserved_unchanged": true
+  },
+  "corrected_003_C1": {
+    "pdf_file": "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.pdf",
+    "pdf_sha256": "7d0caabdafb556df56e532402ec930d9b7d8c891def427b1954b7c4ea1ef13f3",
+    "tex_file": "appendix003_C1/AK3_4mix_6mix_Proof_Appendix_003_C1_en.tex",
+    "tex_sha256": "9d1146a6fc8018abc0e467d538d30f74a0b11af13a0b172900ec590cbda32efc",
+    "pdf_pages": 14,
+    "post_correction_decision": "ACCEPT_003_C1_WITHIN_MATHEMATICAL_AND_FORMALIZATION_SCOPE",
+    "main_theorems_and_mathematical_sections_byte_identical": true,
+    "protected_original_data_code_Lean_and_evidence_members_byte_identical": 31
+  },
+  "required_mathematical_corrections": 0,
+  "required_document_findings_original": 1,
+  "required_document_occurrences_fixed": 2,
+  "required_findings_closed": [
+    "DOC-01"
+  ],
+  "remaining_required_corrections": [],
+  "optional_editorial_points": [
+    {
+      "role": "theory",
+      "id": "E1",
+      "location": "AK3_4mix_6mix_Proof_Appendix_003_en.tex:177",
+      "suggestion": "Make explicit that base conjugation and rewriting reduced HNN forms preserve stable-letter sign sequence, explaining why only the original ++- rotation survives.",
+      "required": false
+    },
+    {
+      "role": "theory",
+      "id": "E2",
+      "location": "AK3_4mix_6mix_Proof_Appendix_003_en.tex:292-295",
+      "suggestion": "Explain that Cayley-tree vertices have integral phase and the translation period is p, which gives the floor(p/2) bound.",
+      "required": false
+    },
+    {
+      "role": "theory",
+      "id": "E3",
+      "location": "AK3_4mix_6mix_Proof_Appendix_003_en.tex:372-377; data/quotient_models.json:index_max",
+      "suggestion": "Document that index_max is exclusive; rank and index_min currently specify the basis correctly, but the JSON field alone can be misread as inclusive.",
+      "required": false
+    },
+    {
+      "role": "scope_formal",
+      "id": "ED-01",
+      "location": "PDF p.3, before Table 1; LaTeX line 72",
+      "point": "Replace Each row of Table 1 is one atomic move with Each ID in Table 1 specifies one atomic move: each printed row contains two IDs. The table itself unambiguously has all 14 moves."
+    },
+    {
+      "role": "scope_formal",
+      "id": "ED-02",
+      "location": "PDF pp.7 and 14; LaTeX lines 297 and 556",
+      "point": "Culler–Morgan locator 1.5 resolves to the correct numbered statement on printed p.577; numbered statement 1.5 or §1, statement 1.5 is a more precise label than Section 1.5."
+    }
+  ],
+  "roles": {
+    "theory": "ACCEPT",
+    "compute": "PASS_IN_INDEPENDENT_COMPUTATIONAL_SCOPE",
+    "scope_formal_original": "ACCEPT_MATHEMATICAL_SCOPE_AND_SUPPLIED_LEAN_MODULE_WITH_REQUIRED_MINOR_DOCUMENT_CORRECTION",
+    "scope_formal_post_correction": "ACCEPT_003_C1_WITHIN_MATHEMATICAL_AND_FORMALIZATION_SCOPE"
+  },
+  "fresh_evidence": {
+    "matrix_cases": {
+      "four_mix": 256,
+      "six_mix": 4096
+    },
+    "group_models": 4,
+    "two_sided_free_substitution_equalities": 42,
+    "endpoint_images": 16,
+    "central_duals": 8,
+    "dual_columns": 3364,
+    "normalized_RHS_pairings": 8,
+    "full_B15": {
+      "witnesses_per_side_per_sign": 28697813,
+      "positive_source_distinct": 28501105,
+      "positive_target_distinct": 13551700,
+      "positive_common_classes": [],
+      "negative_source_distinct": 28501106,
+      "negative_target_distinct": 13551700,
+      "negative_common_classes": [
+        {
+          "word": "XXYYxy",
+          "length": 6
+        },
+        {
+          "word": "XXYxYYYYXYxyyyyy",
+          "length": 16
+        },
+        {
+          "word": "XXYYYYYxyyyyXYxYYYYXyyyyxy",
+          "length": 26
+        },
+        {
+          "word": "XXYYYYxyyyyyXXYxxYYYYYXyyyxy",
+          "length": 28
+        },
+        {
+          "word": "XXYxYYYYXyyyyxYYYYXYxyyyyXYYYYxyyyyy",
+          "length": 36
+        }
+      ],
+      "negative_common_classes_at_most_32": [
+        {
+          "word": "XXYYxy",
+          "length": 6
+        },
+        {
+          "word": "XXYxYYYYXYxyyyyy",
+          "length": 16
+        },
+        {
+          "word": "XXYYYYYxyyyyXYxYYYYXyyyyxy",
+          "length": 26
+        },
+        {
+          "word": "XXYYYYxyyyyyXXYxxYYYYYXyyyxy",
+          "length": 28
+        }
+      ]
+    },
+    "native_full_runs": [
+      {
+        "sign": "+",
+        "wall_seconds": 46.95010709762573,
+        "max_rss_KiB": 898304,
+        "exit_code": 0
+      },
+      {
+        "sign": "-",
+        "wall_seconds": 46.659485816955566,
+        "max_rss_KiB": 898048,
+        "exit_code": 0
+      }
+    ],
+    "Lean_theorems_replayed_this_review": 7,
+    "Lean_type_contracts": 7,
+    "Lean_axiom_audits": 7,
+    "Lean_axiom_set": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Lean_custom_computation_axioms_detected": 0,
+    "Lean_false_propositions_proved_false": 3,
+    "C1_post_correction_reference_destinations_preserved": true,
+    "C1_all_pages_rendered": 14,
+    "C1_all_pages_visually_inspected_by_integrator": true
+  },
+  "review_report_sha256": {
+    "theory/REVIEW.json": "f6590aa074900dffa9e51df3ba9f6d6be233945ab48a14eddaf53886ec3c8297",
+    "compute/REVIEW.json": "6e3a8f6da9383db1df02443721f24b2d9e7af4cd034ada1aea22b5c6c0ce6fc5",
+    "scope_formal/REVIEW.json": "b51d182c4b715896a9ae1d35fa40596fa7a6c2793bec187937bf427c6acb13bf",
+    "scope_formal/POST_CORRECTION_REVIEW.json": "356a547bca3f4353a43fe22f9722f98ebf78b6cb4b6990618cc6cddba7113153"
+  },
+  "trust_and_scope_boundaries": [
+    "Independent AI reviews; no external human peer review is claimed.",
+    "Theorem A: fixed S-to-E0 paths with exactly four mix moves require at least24 atomic moves; no total relator-length cap.",
+    "Theorem B: necessary six-mix constraints, sixteen residual layouts and original-move budgets; not a full six-mix exclusion.",
+    "No general <=23-move exclusion, eight-plus-mix exclusion, S-to-exit bridge or AK3 trivialization.",
+    "Finite matrix inventory is Lean-checked; the arbitrary-path reduction and other mathematical implications remain hand proofs plus exact computations.",
+    "Lean4.35.0 and existing Std objects are trusted; all Std proofs were not rebuilt at trust0 and no independent implementation of the Lean kernel was used.",
+    "Only the supplied seven finite-census theorems were freshly replayed here. The separate27 EFamily/Connections theorems retain review002 provenance.",
+    "Exact full enumerations trust the unverified compiler/runtime; no new Lean or SAT certificate is asserted for B15.",
+    "The separate42-move bridge, exit-family construction, novelty and license decisions were not independently re-reviewed here."
+  ],
+  "reviewer_harness_execution_notes": [
+    "A 4-GiB virtual-address cap prevented Lean worker creation; unchanged compilation succeeded with 8-GiB virtual-address cap, -j 1, -s 1024, -M 2048.",
+    "Initial reviewer consumer used unsupported pp.width option and failed; this was corrected to format.width. The corrected consumer passes seven explicit contracts, with original failed consumer output retained as Consumer.attempt01.stdout.txt."
+  ],
+  "external_publication_or_submission": false,
+  "next_work": "Integrate accepted003-C1 into submission main text; reconcile notation/references, consider optional editorial points, then prepare the public release."
+}
