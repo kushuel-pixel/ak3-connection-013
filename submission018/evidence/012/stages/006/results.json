@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "cap22_paths": 119880,
+  "dag_states": 154,
+  "dag_edges": 231,
+  "literal_005_exit_overlap": 0,
+  "new_steps": 41,
+  "new_peak": 25,
+  "rejoin_state": [
+    "YYYYXyyyx",
+    "YXYxyyx"
+  ],
+  "suffix_steps": 24,
+  "corridor_certificates_replayed": 21,
+  "bidirectional_literal_replay": true,
+  "full_distance_caps_22_23_24": 42,
+  "full_distance_cap25": 41,
+  "first_cap_permitting_41_or_less": 25,
+  "global_optimality_at_cap28": "open",
+  "prefix_distance_caps_22_to_24": 18,
+  "prefix_distance_caps_25_to_28": 17
+}

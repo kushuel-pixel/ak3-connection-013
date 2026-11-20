@@ -1,0 +1,6 @@
+Candidate.AK3Peak.FixedS.cap30_at_least_24 {ms : List Verify.AtomicSemantics.Move}
+  (w : Candidate.AK3Peak.Witness 30 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source ms) : 24 ≤ ms.length
+'Candidate.AK3Peak.FixedS.cap30_at_least_24' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap30_r8_r15._native.decide.ax_1_1]

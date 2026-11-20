@@ -1,0 +1,5 @@
+'FixedS.Cap28Projection.bridge_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedS.Cap28Projection.bridge_at_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedS.Cap28Projection.product_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedS.Cap28Projection.slide_left' depends on axioms: [propext, Quot.sound]
+'FixedS.Cap28Projection.slide_right' depends on axioms: [propext, Quot.sound]

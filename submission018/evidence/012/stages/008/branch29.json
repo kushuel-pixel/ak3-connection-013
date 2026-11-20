@@ -1,0 +1,90 @@
+{
+  "old_operations": [
+    5,
+    11,
+    3,
+    7,
+    4
+  ],
+  "new_operations": [
+    3,
+    7,
+    4,
+    11,
+    2
+  ],
+  "old_states": [
+    [
+      "xYXYxy",
+      "xxxYYYY"
+    ],
+    [
+      "xYXYxy",
+      "xxxYYYYYXyxyX"
+    ],
+    [
+      "xYXYxy",
+      "xxYYYYYXyxy"
+    ],
+    [
+      "xYXYYxyyyyyXX",
+      "xxYYYYYXyxy"
+    ],
+    [
+      "YXYYxyyyyyX",
+      "xxYYYYYXyxy"
+    ],
+    [
+      "YXYYxyyyyyX",
+      "xxYYYYYXYxyyyyyX"
+    ]
+  ],
+  "new_states": [
+    [
+      "xYXYxy",
+      "xxxYYYY"
+    ],
+    [
+      "xYXYxyyyyyXXX",
+      "xxxYYYY"
+    ],
+    [
+      "YXYxyyyyyXX",
+      "xxxYYYY"
+    ],
+    [
+      "YXYxyyyyyXX",
+      "xxxYYYYYXYxyyyyyXX"
+    ],
+    [
+      "YXYxyyyyyXX",
+      "xxYYYYYXYxyyyyyX"
+    ],
+    [
+      "YXYYxyyyyyX",
+      "xxYYYYYXYxyyyyyX"
+    ]
+  ],
+  "old_heights": [
+    13,
+    19,
+    17,
+    24,
+    22,
+    27
+  ],
+  "new_heights": [
+    13,
+    20,
+    18,
+    29,
+    27,
+    27
+  ],
+  "suffix_choices": 34624,
+  "common_symbolic_endpoint": [
+    "XaXaBxx",
+    "XbXaBxx"
+  ],
+  "loop_length": 10
+}

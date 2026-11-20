@@ -1,0 +1,10 @@
+keys file: /tmp/ak3-025-projection-tOjXpPPr/AK3_c28.keys (8694374 keys, 139109984 bytes)
+sorted+distinct: yes
+canonical-form violations: 0 ; length>cap: 0
+hash table built (8694374 states)
+start xxxxyXXXY|xxxxxyXXXXXYY in set: yes
+target XyyyxYYYY|xxYYYYXyyyy in set: no
+target yyyyxYXyxYYYxyyyy|YYYYXXYYYYX in set: no
+closure: checked 238806300 moves from 8694374 states; violations: 0
+time: 130.1s
+VERDICT: PASS (closed set excludes all targets => targets unreachable from start with peak <= 28)

@@ -1,0 +1,5 @@
+'Candidate.AK3Peak.FixedS.recorded_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.AK3Peak.FixedS.at_least_106036_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.AK3Peak.FixedS.shared_suffix_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.AK3Peak.FixedS.at_least_34624_peak29' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.AK3Peak.FixedS.paired_34624' depends on axioms: [propext, Classical.choice, Quot.sound]

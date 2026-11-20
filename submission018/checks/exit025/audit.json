@@ -1,0 +1,41 @@
+{
+  "min_weighted_length": 19,
+  "minimizing_row_lengths": [
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "sha256": "e62f7a0a24f993b22ec06edd625ffbbc3a9e2fa30d215b911834e1741c4aa0e4",
+  "keys": 8694374,
+  "length_histogram": {
+    "13": 2,
+    "14": 5,
+    "15": 72,
+    "16": 82,
+    "17": 453,
+    "18": 507,
+    "19": 2645,
+    "20": 2827,
+    "21": 15264,
+    "22": 16097,
+    "23": 89003,
+    "24": 97222,
+    "25": 537979,
+    "26": 610397,
+    "27": 3354167,
+    "28": 3967652
+  },
+  "max_junction_free_budget_over_both_row_choices": 4,
+  "membership": {
+    "A": true,
+    "S": true,
+    "E3": false,
+    "T": false,
+    "landing": false
+  }
+}

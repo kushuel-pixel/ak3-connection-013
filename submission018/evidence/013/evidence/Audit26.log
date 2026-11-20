@@ -1,0 +1,27 @@
+Candidate.AK3Peak.FixedS.exact25_to26 {h : ℕ} (lo : 25 ≤ h) (hi : h ≤ 26) :
+  Candidate.AK3Peak.FixedS.Exact (Candidate.AK3Peak.Witness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 41 ∧
+    Candidate.AK3Peak.FixedS.Exact
+      (Candidate.AK3Peak.FixedS.AvoidWitness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 41
+'Candidate.AK3Peak.FixedS.exact25_to26' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap26_r16_r24._native.decide.ax_1_1]
+Candidate.AK3Peak.FixedS.through30_of_last_cut (h30 : Candidate.AK3Peak.FixedS.OrdinaryCut 30 16 24) (h : ℕ) :
+  25 ≤ h →
+    h ≤ 30 →
+      Candidate.AK3Peak.FixedS.Exact (Candidate.AK3Peak.Witness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 41 ∧
+        Candidate.AK3Peak.FixedS.Exact
+          (Candidate.AK3Peak.FixedS.AvoidWitness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 41
+'Candidate.AK3Peak.FixedS.through30_of_last_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.forty_requires_27 {ms : List Verify.AtomicSemantics.Move}
+  (he : Verify.AtomicSemantics.wordRun ms Candidate.AK3Peak.ak3 = Candidate.AK3Peak.source) (hlen : ms.length ≤ 40) :
+  27 ≤ Candidate.AK3Peak.peak ms Candidate.AK3Peak.ak3
+'Candidate.AK3Peak.FixedS.forty_requires_27' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap26_r16_r24._native.decide.ax_1_1]
+Candidate.AK3Peak.FixedS.forty_requires_31_of_cut (h30 : Candidate.AK3Peak.FixedS.OrdinaryCut 30 16 24)
+  {ms : List Verify.AtomicSemantics.Move}
+  (he : Verify.AtomicSemantics.wordRun ms Candidate.AK3Peak.ak3 = Candidate.AK3Peak.source) (hlen : ms.length ≤ 40) :
+  31 ≤ Candidate.AK3Peak.peak ms Candidate.AK3Peak.ak3
+'Candidate.AK3Peak.FixedS.forty_requires_31_of_cut' depends on axioms: [propext, Classical.choice, Quot.sound]

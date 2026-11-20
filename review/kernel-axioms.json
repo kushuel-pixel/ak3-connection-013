@@ -1,0 +1,132 @@
+{
+  "largest_child_rss_kib": 3389160,
+  "lean": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mode": "kernel",
+  "theorems": {
+    "Candidate.AK3Peak.FixedS.BankSound.to_compact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.CompactSound.deleted_of_check": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.CompactSound.ordinary_of_check": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.LayerPilot.coverA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.LayerPilot.coverS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.StreamCut.cap30_from_saved_layers": [
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.approach_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.arms_agree": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.at_least_106036_paths": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.at_least_34624_peak29": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.back22_inverse": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.back22_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.back23_inverse": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.back23_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.back25_inverse": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.back25_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.both_branches": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.bypass22_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.bypass23_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.bypass25_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.distance_table_of_cuts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.low_excursions": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.paired_34624": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.recorded_counts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.simple_six": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.simple_ten": [
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.through25_move35": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Candidate.AK3Peak.FixedS.through25_ok": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

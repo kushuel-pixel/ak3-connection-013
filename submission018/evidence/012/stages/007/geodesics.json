@@ -1,0 +1,164 @@
+{
+  "distance": 41,
+  "caps": {
+    "24": {
+      "paths": 0,
+      "states": 0,
+      "edges": 0,
+      "midpoints": [],
+      "through_M": 0,
+      "through_old_edge": 0,
+      "mandatory_state_depths": []
+    },
+    "25": {
+      "paths": 33864,
+      "states": 143,
+      "edges": 267,
+      "midpoints": [
+        {
+          "state": [
+            "XYYYxyyyy",
+            "YXYxyyx"
+          ],
+          "paths": 24900
+        },
+        {
+          "state": [
+            "YYYYXyyyx",
+            "YYXYxyyxy"
+          ],
+          "paths": 8964
+        }
+      ],
+      "through_M": 9960,
+      "through_old_edge": 12960,
+      "mandatory_state_depths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        41
+      ],
+      "exact_peak_paths": 33864
+    },
+    "26": {
+      "paths": 36788,
+      "states": 151,
+      "edges": 285,
+      "midpoints": [
+        {
+          "state": [
+            "XYYYxyyyy",
+            "YXYxyyx"
+          ],
+          "paths": 27050
+        },
+        {
+          "state": [
+            "YYYYXyyyx",
+            "YYXYxyyxy"
+          ],
+          "paths": 9738
+        }
+      ],
+      "through_M": 10820,
+      "through_old_edge": 12960,
+      "mandatory_state_depths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        41
+      ],
+      "exact_peak_paths": 2924
+    },
+    "27": {
+      "paths": 71412,
+      "states": 155,
+      "edges": 290,
+      "midpoints": [
+        {
+          "state": [
+            "XYYYxyyyy",
+            "YXYxyyx"
+          ],
+          "paths": 54100
+        },
+        {
+          "state": [
+            "YYYYXyyyx",
+            "YYXYxyyxy"
+          ],
+          "paths": 17312
+        }
+      ],
+      "through_M": 19476,
+      "through_old_edge": 24960,
+      "mandatory_state_depths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        41
+      ],
+      "exact_peak_paths": 34624
+    },
+    "28": {
+      "paths": 71412,
+      "states": 155,
+      "edges": 290,
+      "midpoints": [
+        {
+          "state": [
+            "XYYYxyyyy",
+            "YXYxyyx"
+          ],
+          "paths": 54100
+        },
+        {
+          "state": [
+            "YYYYXyyyx",
+            "YYXYxyyxy"
+          ],
+          "paths": 17312
+        }
+      ],
+      "through_M": 19476,
+      "through_old_edge": 24960,
+      "mandatory_state_depths": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        41
+      ],
+      "exact_peak_paths": 0
+    }
+  },
+  "M": [
+    "YYYYXyyyx",
+    "YXYxyyx"
+  ],
+  "original_bottleneck": {
+    "from_state": [
+      "xYYYYXyyy",
+      "yyxxYX"
+    ],
+    "to_state": [
+      "xYYYYXyyy",
+      "yyxxYYYYYXyyy"
+    ],
+    "operation": 4
+  },
+  "left_branch_depth16": 16
+}

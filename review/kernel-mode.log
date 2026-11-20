@@ -1,0 +1,21 @@
+FixedSWitness OK
+FixedSPaths OK
+ThroughEdge OK
+FixedSCuts OK
+FixedSCycles OK
+PathCount OK
+RecordedCounts OK
+CountSemantics OK
+PairedPaths OK
+StreamCut OK
+B5BallEngine OK
+B5BallSearch OK
+CompactEngine OK
+CompactSound OK
+BankEngine OK
+BankSound OK
+LayerChecks OK
+LayerPilot OK
+AuditKernel OK
+module-replay OK
+PASS 28 declaration audits

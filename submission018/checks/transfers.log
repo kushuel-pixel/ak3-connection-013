@@ -1,0 +1,4 @@
+ac-00399 to A: 6 moves, peak 13; A to S: 42 moves, peak 22; E3 to (x,y): 21 moves, peak 22
+bypass25 {"start": ["YXYxyx", "YYYxxxx"], "finish": ["yXXXYxxxx", "YYxxxxxyXXXXX"], "ids": [8, 6, 5, 12, 5, 12, 3, 8, 4, 7, 12, 4, 11, 11, 11, 11, 4, 0, 9, 11, 13, 4, 11, 5, 12, 11, 5, 12, 11, 13, 4, 6, 11, 11, 4, 7, 7, 7, 7, 8, 10], "moves": 41, "states": 42, "peak": 25, "peak_steps": [9], "crossings": []}
+through25 {"start": ["YXYxyx", "YYYxxxx"], "finish": ["yXXXYxxxx", "YYxxxxxyXXXXX"], "ids": [8, 6, 5, 12, 5, 12, 3, 8, 0, 5, 12, 7, 5, 11, 11, 11, 11, 5, 11, 4, 13, 11, 12, 5, 11, 12, 5, 11, 4, 13, 11, 11, 11, 9, 4, 10, 10, 7, 7, 7, 8], "moves": 41, "states": 42, "peak": 25, "peak_steps": [10, 11], "crossings": [[35, 4, "forward"]]}
+PASS

@@ -1,0 +1,22 @@
+{
+  "cap22_deleted_17_26": {
+    "seconds": 82.51,
+    "max_rss_kib": 2342640,
+    "exit": 0
+  },
+  "cap24_ordinary_15_26": {
+    "seconds": 386.99,
+    "max_rss_kib": 4321176,
+    "exit": 0
+  },
+  "cap26_ordinary_16_24": {
+    "seconds": 1874.75,
+    "max_rss_kib": 4890528,
+    "exit": 0
+  },
+  "cap30_ordinary_8_15": {
+    "seconds": 73.44,
+    "max_rss_kib": 3060332,
+    "exit": 0
+  }
+}

@@ -1,0 +1,36 @@
+Candidate.AK3Peak.FixedS.exact22_deleted :
+  Candidate.AK3Peak.FixedS.Exact
+    (Candidate.AK3Peak.FixedS.AvoidWitness 22 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 44
+'Candidate.AK3Peak.FixedS.exact22_deleted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap22_r17_r26._native.decide.ax_1_1]
+Candidate.AK3Peak.FixedS.exact22_to24 {h : ℕ} (lo : 22 ≤ h) (hi : h ≤ 24) :
+  Candidate.AK3Peak.FixedS.Exact (Candidate.AK3Peak.Witness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 42
+'Candidate.AK3Peak.FixedS.exact22_to24' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap24_r15_r26._native.decide.ax_1_1]
+Candidate.AK3Peak.FixedS.exact23_to24_deleted {h : ℕ} (lo : 23 ≤ h) (hi : h ≤ 24) :
+  Candidate.AK3Peak.FixedS.Exact
+    (Candidate.AK3Peak.FixedS.AvoidWitness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 42
+'Candidate.AK3Peak.FixedS.exact23_to24_deleted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap24_r15_r26._native.decide.ax_1_1]
+Candidate.AK3Peak.FixedS.reachable_in_41_iff (h : ℕ) :
+  (∃ ms, ms.length ≤ 41 ∧ Candidate.AK3Peak.Witness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source ms) ↔ 25 ≤ h
+'Candidate.AK3Peak.FixedS.reachable_in_41_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap24_r15_r26._native.decide.ax_1_1]
+Candidate.AK3Peak.FixedS.compulsory_through_43 {ms : List Verify.AtomicSemantics.Move}
+  (w : Candidate.AK3Peak.Witness 22 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source ms) (len : ms.length ≤ 43) :
+  ∃ pre m post,
+    ms = pre ++ m :: post ∧
+      Candidate.AK3Peak.FixedS.crosses (Verify.AtomicSemantics.wordRun pre Candidate.AK3Peak.ak3)
+        (Verify.AtomicSemantics.wordStep m (Verify.AtomicSemantics.wordRun pre Candidate.AK3Peak.ak3))
+'Candidate.AK3Peak.FixedS.compulsory_through_43' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ Candidate.AK3Peak.FixedS.cap22_r17_r26._native.decide.ax_1_1]

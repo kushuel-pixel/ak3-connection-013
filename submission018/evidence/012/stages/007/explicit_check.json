@@ -1,0 +1,252 @@
+{
+  "counts": {
+    "42": {
+      "counts": {
+        "paths": 119880,
+        "old_edge": 119880,
+        "M": 18000,
+        "skip_both": 0
+      },
+      "peak_histogram": {
+        "22": 119880
+      }
+    },
+    "41": {
+      "counts": {
+        "paths": 71412,
+        "old_edge": 24960,
+        "M": 19476,
+        "skip_both": 35616
+      },
+      "peak_histogram": {
+        "27": 34624,
+        "26": 2924,
+        "25": 33864
+      }
+    }
+  },
+  "bypass": {
+    "start": [
+      "xyxYXY",
+      "xxxYYYY"
+    ],
+    "goal": [
+      "XyyyxYYYY",
+      "xxYYYYYXyyyyy"
+    ],
+    "moves": [
+      7,
+      9,
+      5,
+      11,
+      5,
+      11,
+      3,
+      7,
+      4,
+      8,
+      11,
+      4,
+      12,
+      12,
+      12,
+      12,
+      4,
+      0,
+      6,
+      12,
+      10,
+      4,
+      12,
+      5,
+      11,
+      12,
+      5,
+      11,
+      12,
+      10,
+      4,
+      9,
+      12,
+      12,
+      4,
+      8,
+      8,
+      8,
+      8,
+      7,
+      13
+    ],
+    "states": [
+      [
+        "xyxYXY",
+        "xxxYYYY"
+      ],
+      [
+        "yxYXYx",
+        "xxxYYYY"
+      ],
+      [
+        "xYXYxy",
+        "xxxYYYY"
+      ],
+      [
+        "xYXYxy",
+        "xxxYYYYYXyxyX"
+      ],
+      [
+        "xYXYxy",
+        "xxYYYYYXyxy"
+      ],
+      [
+        "xYXYxy",
+        "xxYYYYYXyyxyX"
+      ],
+      [
+        "xYXYxy",
+        "xYYYYYXyyxy"
+      ],
+      [
+        "xYXYYYxyyyyyX",
+        "xYYYYYXyyxy"
+      ],
+      [
+        "YXYYYxyyyyy",
+        "xYYYYYXyyxy"
+      ],
+      [
+        "YXYYYxyyyyy",
+        "xYYYYYXYxyyyyy"
+      ],
+      [
+        "XYYYxyyyy",
+        "xYYYYYXYxyyyyy"
+      ],
+      [
+        "XYYYxyyyy",
+        "YYYYYXYxyyyyyx"
+      ],
+      [
+        "XYYYxyyyy",
+        "YYYYYXYxyyxyyyy"
+      ],
+      [
+        "XYYYxyyyy",
+        "YYYYXYxyyxyyy"
+      ],
+      [
+        "XYYYxyyyy",
+        "YYYXYxyyxyy"
+      ],
+      [
+        "XYYYxyyyy",
+        "YYXYxyyxy"
+      ],
+      [
+        "XYYYxyyyy",
+        "YXYxyyx"
+      ],
+      [
+        "XYYYxyyyy",
+        "YXYxYxyyyy"
+      ],
+      [
+        "YYYYXyyyx",
+        "YXYxYxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "YXYxYxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "XYxYxyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxYxyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxYxYXyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYxYXyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYxYXYxyyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxYXYxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYXYxyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYXYxxyyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YXYxxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "XYxxyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxxyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxxYXyyy"
+      ],
+      [
+        "YxYYYYXyyyy",
+        "YxxYXyyy"
+      ],
+      [
+        "YxYYYYXyyyy",
+        "xxYXyy"
+      ],
+      [
+        "YxYYYYXyyyy",
+        "yxxYXy"
+      ],
+      [
+        "YxYYYYXyyyy",
+        "yxxYYYYYXyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "yxxYYYYYXyyyy"
+      ],
+      [
+        "yxYYYYXyy",
+        "yxxYYYYYXyyyy"
+      ],
+      [
+        "yyxYYYYXy",
+        "yxxYYYYYXyyyy"
+      ],
+      [
+        "yyyxYYYYX",
+        "yxxYYYYYXyyyy"
+      ],
+      [
+        "XyyyxYYYY",
+        "yxxYYYYYXyyyy"
+      ],
+      [
+        "XyyyxYYYY",
+        "xxYYYYYXyyyyy"
+      ]
+    ],
+    "peak": 25
+  }
+}

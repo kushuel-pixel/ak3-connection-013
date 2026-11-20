@@ -1,0 +1,2 @@
+'FixedS.Cap28Projection.exact_product_at_28' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FixedS.Cap28Projection.junction_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,13 @@
+Fix the ordered pairs A=(xyxYXY, xxxYYYY) and S=(XyyyxYYYY, xxYYYYYXyyyyy). Capitals denote inverses. Each of the 14 ac-r2-v1 moves costs one. The cap bounds total freely reduced length, endpoints included. ACC-P000024 found 119,880 shortest 42-move sequences at cap 22. All crossed the edge e from U=(xYYYYXyyy, yyxxYX) to V=(xYYYYXyyy, yyxxYYYYYXyyy) on move 36.
+
+Cap 23 is the first cap at which a shortest path can avoid e. Cap 25 is the first to admit a path of at most 41 moves. The ordinary distance and the distance after deleting both directions of e are respectively 42 and 44 at cap 22, both 42 at caps 23–24, and both 41 at caps 25–26. At cap 22 every path of at most 43 moves crosses e. At cap 25 one shortest path crosses e from U to V on move 35 (ID 4). The following peak-25 witness avoids e.
+
+7 9 5 11 5 11 3 7 4 8 11 4 12 12 12 12 4 0 6 12 10 4 12 5 11 12 5 11 12 10 4 9 12 12 4 8 8 8 8 7 13
+
+Lean checks the witnesses in the kernel. Its distance lower bounds through cap 26 use disjoint-ball computations with decide +native, which trusts the compiled evaluator. Consequently any A-to-S path of at most 40 moves has peak at least 27. At cap 30 a smaller Lean computation excludes paths of at most 23 moves.
+
+A C++ search at cap 30 found disjoint balls at radii (16,24) and (15,25) from A and S. Both splits reuse the inner balls. Either split excludes paths of at most 40 moves. Combined with the witness above, this gives both distances as 41 at caps 27–30. It also implies that any A-to-S path of at most 40 moves has peak at least 31. In Lean the full cap-30 exclusion remains a hypothesis. Existence of such a path at a higher peak is open here.
+
+The recorded layers admit 71,412 distinct 41-move lists at cap 28 and 106,036 at cap 29. Prepending 7 9 3 7 4 11 2 to each recorded 34-move cap-27 suffix from the join gives exactly the 34,624 additions, each once. The prefix 7 9 5 11 3 7 4 reaches the same join and lowers the peak from 29 to 27 for every suffix. Lean checks the counts and classification in the kernel. This gives at least 106,036 distinct 41-move lists in the full cap-29 graph.
+
+Prior contribution by Hiromu Yasuno, ACC-P000024. We use the Akbulut–Kirby family (https://doi.org/10.1016/0040-9383(85)90010-2) and the SAIR ac-r2-v1 verifier (https://github.com/SAIRcompetition/Andrews-Curtis/tree/a0fd6e6f52d82c93ccc06ab91d81e8fa3678256e/competition/tools/verifier). AI assistance was used in the search, implementation, checks and drafting.

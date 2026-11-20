@@ -1,0 +1,15 @@
+ACC-P000024 found distance 42 from A=(xyxYXY, xxxYYYY) to S=(XyyyxYYYY, xxYYYYYXyyyyy) at total length cap 22. All 119,880 shortest ordered move-ID sequences used the same edge at move 36. How much additional length permits a shortest path to avoid this edge, and how much permits a shorter path?
+
+We keep the same literal ordered relator pairs and 14 ac-r2-v1 moves, at unit cost. Uppercase letters denote inverses. The cap bounds the sum of both freely reduced word lengths at every state, including the endpoints. Let e join (xYYYYXyyy, yyxxYX) to (xYYYYXyyy, yyxxYYYYYXyyy). To test avoidance, delete both directions between these two states. Move ID 4 remains available elsewhere.
+
+For caps 22, 23–24 and 25–30 respectively, the ordinary distances are 42, 42 and 41. With e deleted the corresponding distances are 44, 42 and 41. Thus cap 23 first allows a shortest path to bypass e. Cap 25 first lowers the distance to 41. One chronological list of 41 move IDs, of peak 25 and avoiding e, is
+
+7 9 5 11 5 11 3 7 4 8 11 4 12 12 12 12 4 0 6 12 10 4 12 5 11 12 5 11 12 10 4 9 12 12 4 8 8 8 8 7 13
+
+For the lower bound at cap 30, searches from A and S have disjoint closed balls for radii (16,24) and (15,25). Any path of at most 40 moves would meet both balls in either split. Consequently any such path must attain total length at least 31. Whether one exists at cap 31 or beyond remains open here.
+
+At cap 29 the number of shortest ordered move-ID sequences rises from 71,412 at cap 28 to 106,036. After the same first two moves, two five-move segments meet again at the same literal state. They have peaks 27 and 29 and share 34,624 possible continuations. Substituting the higher segment accounts for all 34,624 additional sequences.
+
+The accompanying evidence includes replayable witnesses, breadth-first search source, layer records and instructions. The new distance and counting results rely on native finite computations. The two cap-30 splits reuse the stored inner balls. Full Lean verification and external independent review of the extension are pending. The conclusions concern the given fixed target and the 14-move metric.
+
+Prior result: Hiromu Yasuno, ACC-P000024. We use the Akbulut–Kirby presentation family (https://doi.org/10.1016/0040-9383(85)90010-2) and the SAIR organizers’ ac-r2-v1 move table and verifier (https://github.com/SAIRcompetition/Andrews-Curtis/tree/a0fd6e6f52d82c93ccc06ab91d81e8fa3678256e/competition/tools/verifier). AI assistance was used in the search, implementation, checks and drafting.

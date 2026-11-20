@@ -1,0 +1,10 @@
+name = "verify"
+version = "0.1.0"
+defaultTargets = ["Bridge"]
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+[[lean_lib]]
+name = "Bridge"
+roots = ["Verify.AtomicSemantics", "B5PeakCore", "B5ReverseWitness", "B5Bridge42"]

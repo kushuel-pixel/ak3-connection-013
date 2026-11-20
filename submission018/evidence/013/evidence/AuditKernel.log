@@ -1,0 +1,195 @@
+Candidate.AK3Peak.FixedS.bypass22_ok :
+  Candidate.AK3Peak.FixedS.bypass22.length = 44 ∧
+    Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.bypass22 Candidate.AK3Peak.ak3 = 22 ∧
+      Candidate.AK3Peak.FixedS.AvoidWitness 22 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source
+        Candidate.AK3Peak.FixedS.bypass22
+'Candidate.AK3Peak.FixedS.bypass22_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.bypass23_ok :
+  Candidate.AK3Peak.FixedS.bypass23.length = 42 ∧
+    Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.bypass23 Candidate.AK3Peak.ak3 = 23 ∧
+      Candidate.AK3Peak.FixedS.AvoidWitness 23 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source
+        Candidate.AK3Peak.FixedS.bypass23
+'Candidate.AK3Peak.FixedS.bypass23_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.bypass25_ok :
+  Candidate.AK3Peak.FixedS.bypass25.length = 41 ∧
+    Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.bypass25 Candidate.AK3Peak.ak3 = 25 ∧
+      Candidate.AK3Peak.FixedS.AvoidWitness 25 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source
+        Candidate.AK3Peak.FixedS.bypass25
+'Candidate.AK3Peak.FixedS.bypass25_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.back22_ok :
+  Candidate.AK3Peak.FixedS.back22.length = 44 ∧
+    Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.back22 Candidate.AK3Peak.source = 22 ∧
+      Candidate.AK3Peak.FixedS.AvoidWitness 22 Candidate.AK3Peak.source Candidate.AK3Peak.ak3
+        Candidate.AK3Peak.FixedS.back22
+'Candidate.AK3Peak.FixedS.back22_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.back23_ok :
+  Candidate.AK3Peak.FixedS.back23.length = 42 ∧
+    Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.back23 Candidate.AK3Peak.source = 23 ∧
+      Candidate.AK3Peak.FixedS.AvoidWitness 23 Candidate.AK3Peak.source Candidate.AK3Peak.ak3
+        Candidate.AK3Peak.FixedS.back23
+'Candidate.AK3Peak.FixedS.back23_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.back25_ok :
+  Candidate.AK3Peak.FixedS.back25.length = 41 ∧
+    Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.back25 Candidate.AK3Peak.source = 25 ∧
+      Candidate.AK3Peak.FixedS.AvoidWitness 25 Candidate.AK3Peak.source Candidate.AK3Peak.ak3
+        Candidate.AK3Peak.FixedS.back25
+'Candidate.AK3Peak.FixedS.back25_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.back22_inverse :
+  Candidate.AK3Peak.FixedS.back22 = Candidate.AK3Peak.reverseMoves Candidate.AK3Peak.FixedS.bypass22
+'Candidate.AK3Peak.FixedS.back22_inverse' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.back23_inverse :
+  Candidate.AK3Peak.FixedS.back23 = Candidate.AK3Peak.reverseMoves Candidate.AK3Peak.FixedS.bypass23
+'Candidate.AK3Peak.FixedS.back23_inverse' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.back25_inverse :
+  Candidate.AK3Peak.FixedS.back25 = Candidate.AK3Peak.reverseMoves Candidate.AK3Peak.FixedS.bypass25
+'Candidate.AK3Peak.FixedS.back25_inverse' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.approach_ok :
+  Candidate.AK3Peak.Witness 27 Candidate.AK3Peak.source Candidate.AK3Peak.FixedS.lowP Candidate.AK3Peak.FixedS.approach
+'Candidate.AK3Peak.FixedS.approach_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.arms_agree (s : Verify.AtomicSemantics.WordState)
+  (hs : Verify.AtomicSemantics.ReducedState s) :
+  Verify.AtomicSemantics.wordRun Candidate.AK3Peak.FixedS.arm27 s =
+    Verify.AtomicSemantics.wordRun Candidate.AK3Peak.FixedS.arm29 s
+'Candidate.AK3Peak.FixedS.arms_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.both_branches :
+  Candidate.AK3Peak.Witness 27 Candidate.AK3Peak.FixedS.fork Candidate.AK3Peak.FixedS.joinState
+      Candidate.AK3Peak.FixedS.arm27 ∧
+    Candidate.AK3Peak.Witness 29 Candidate.AK3Peak.FixedS.fork Candidate.AK3Peak.FixedS.joinState
+        Candidate.AK3Peak.FixedS.arm29 ∧
+      List.map Candidate.AK3Peak.total
+            (Candidate.AK3Peak.FixedS.visited Candidate.AK3Peak.FixedS.arm27 Candidate.AK3Peak.FixedS.fork) =
+          [13, 19, 17, 24, 22, 27] ∧
+        List.map Candidate.AK3Peak.total
+            (Candidate.AK3Peak.FixedS.visited Candidate.AK3Peak.FixedS.arm29 Candidate.AK3Peak.FixedS.fork) =
+          [13, 20, 18, 29, 27, 27]
+'Candidate.AK3Peak.FixedS.both_branches' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.simple_ten :
+  Candidate.AK3Peak.FixedS.ten.length = 10 ∧
+    Candidate.AK3Peak.Witness 29 Candidate.AK3Peak.FixedS.fork Candidate.AK3Peak.FixedS.fork
+        Candidate.AK3Peak.FixedS.ten ∧
+      (Candidate.AK3Peak.FixedS.visited Candidate.AK3Peak.FixedS.ten Candidate.AK3Peak.FixedS.fork).dropLast.Nodup
+'Candidate.AK3Peak.FixedS.simple_ten' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.low_excursions :
+  Candidate.AK3Peak.Witness 28 Candidate.AK3Peak.FixedS.lowP Candidate.AK3Peak.FixedS.lowQ
+      Candidate.AK3Peak.FixedS.leftThree ∧
+    Candidate.AK3Peak.Witness 28 Candidate.AK3Peak.FixedS.lowP Candidate.AK3Peak.FixedS.lowQ
+        Candidate.AK3Peak.FixedS.rightThree ∧
+      List.map Candidate.AK3Peak.total
+            (Candidate.AK3Peak.FixedS.visited Candidate.AK3Peak.FixedS.leftThree Candidate.AK3Peak.FixedS.lowP) =
+          [21, 28, 28, 21] ∧
+        List.map Candidate.AK3Peak.total
+              (Candidate.AK3Peak.FixedS.visited Candidate.AK3Peak.FixedS.rightThree Candidate.AK3Peak.FixedS.lowP) =
+            [21, 28, 28, 21] ∧
+          Candidate.AK3Peak.Witness 21 Candidate.AK3Peak.FixedS.lowP Candidate.AK3Peak.FixedS.lowQ
+            [Verify.AtomicSemantics.Move.m1]
+'Candidate.AK3Peak.FixedS.low_excursions' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.simple_six :
+  Candidate.AK3Peak.FixedS.six.length = 6 ∧
+    Candidate.AK3Peak.Witness 28 Candidate.AK3Peak.FixedS.lowP Candidate.AK3Peak.FixedS.lowP
+        Candidate.AK3Peak.FixedS.six ∧
+      (Candidate.AK3Peak.FixedS.visited Candidate.AK3Peak.FixedS.six Candidate.AK3Peak.FixedS.lowP).dropLast.Nodup
+'Candidate.AK3Peak.FixedS.simple_six' depends on axioms: [propext]
+Candidate.AK3Peak.FixedS.recorded_counts :
+  Candidate.AK3Peak.FixedS.countFrom 28 Candidate.AK3Peak.FixedS.recordedLayers Candidate.AK3Peak.ak3 = 71412 ∧
+    Candidate.AK3Peak.FixedS.countFrom 29 Candidate.AK3Peak.FixedS.recordedLayers Candidate.AK3Peak.ak3 = 106036
+'Candidate.AK3Peak.FixedS.recorded_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.at_least_106036_paths :
+  ∃ paths,
+    paths.Nodup ∧
+      paths.length = 106036 ∧
+        ∀ ms ∈ paths, ms.length = 41 ∧ Candidate.AK3Peak.Witness 29 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source ms
+'Candidate.AK3Peak.FixedS.at_least_106036_paths' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.at_least_34624_peak29 :
+  ∃ paths,
+    paths.Nodup ∧
+      paths.length = 34624 ∧
+        ∀ ms ∈ paths,
+          ms.length = 41 ∧
+            Verify.AtomicSemantics.wordRun ms Candidate.AK3Peak.ak3 = Candidate.AK3Peak.source ∧
+              Candidate.AK3Peak.peak ms Candidate.AK3Peak.ak3 = 29
+'Candidate.AK3Peak.FixedS.at_least_34624_peak29' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.distance_table_of_cuts (h22 : Candidate.AK3Peak.FixedS.DeletedCut 22 17 26)
+  (h24 : Candidate.AK3Peak.FixedS.OrdinaryCut 24 15 26) (h30 : Candidate.AK3Peak.FixedS.OrdinaryCut 30 16 24) :
+  (Candidate.AK3Peak.FixedS.Exact (Candidate.AK3Peak.Witness 22 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 42 ∧
+      Candidate.AK3Peak.FixedS.Exact
+        (Candidate.AK3Peak.FixedS.AvoidWitness 22 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 44) ∧
+    (∀ (h : ℕ),
+        23 ≤ h →
+          h ≤ 24 →
+            Candidate.AK3Peak.FixedS.Exact (Candidate.AK3Peak.Witness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source)
+                42 ∧
+              Candidate.AK3Peak.FixedS.Exact
+                (Candidate.AK3Peak.FixedS.AvoidWitness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 42) ∧
+      ∀ (h : ℕ),
+        25 ≤ h →
+          h ≤ 30 →
+            Candidate.AK3Peak.FixedS.Exact (Candidate.AK3Peak.Witness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source)
+                41 ∧
+              Candidate.AK3Peak.FixedS.Exact
+                (Candidate.AK3Peak.FixedS.AvoidWitness h Candidate.AK3Peak.ak3 Candidate.AK3Peak.source) 41
+'Candidate.AK3Peak.FixedS.distance_table_of_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.CompactSound.ordinary_of_check {cap r t : ℕ}
+  (hc : AK3Compact.separate none cap r t Candidate.AK3Peak.ak3 Candidate.AK3Peak.source = true) :
+  Candidate.AK3Peak.FixedS.OrdinaryCut cap r t
+'Candidate.AK3Peak.FixedS.CompactSound.ordinary_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.CompactSound.deleted_of_check {cap r t : ℕ}
+  (hc :
+    AK3Compact.separate
+        (some (AK3Compact.encode Candidate.AK3Peak.FixedS.U, AK3Compact.encode Candidate.AK3Peak.FixedS.V)) cap r t
+        Candidate.AK3Peak.ak3 Candidate.AK3Peak.source =
+      true) :
+  Candidate.AK3Peak.FixedS.DeletedCut cap r t
+'Candidate.AK3Peak.FixedS.CompactSound.deleted_of_check' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.BankSound.to_compact {ns : List ℕ} {ban : AK3Compact.Ban} {cap r t : ℕ}
+  {a b : Verify.AtomicSemantics.WordState} (h : AK3Bank.separate ns ban cap r t a b = true) :
+  AK3Compact.separate ban cap r t a b = true
+'Candidate.AK3Peak.FixedS.BankSound.to_compact' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.paired_34624 :
+  ∃ tails,
+    tails.Nodup ∧
+      tails.length = 34624 ∧
+        ∀ ys ∈ tails,
+          have a := Candidate.AK3Peak.FixedS.firstTwo ++ Candidate.AK3Peak.FixedS.arm27 ++ ys;
+          have b := Candidate.AK3Peak.FixedS.firstTwo ++ Candidate.AK3Peak.FixedS.arm29 ++ ys;
+          a ≠ b ∧
+            a.length = 41 ∧
+              b.length = 41 ∧
+                Verify.AtomicSemantics.wordRun a Candidate.AK3Peak.ak3 = Candidate.AK3Peak.source ∧
+                  Verify.AtomicSemantics.wordRun b Candidate.AK3Peak.ak3 = Candidate.AK3Peak.source ∧
+                    Candidate.AK3Peak.peak a Candidate.AK3Peak.ak3 = 27 ∧
+                      Candidate.AK3Peak.peak b Candidate.AK3Peak.ak3 = 29
+'Candidate.AK3Peak.FixedS.paired_34624' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.StreamCut.cap30_from_saved_layers (A S : Candidate.AK3Peak.FixedS.StreamCut.Layers)
+  (ha : Candidate.AK3Peak.FixedS.StreamCut.Cover 30 15 Candidate.AK3Peak.ak3 A)
+  (hs : Candidate.AK3Peak.FixedS.StreamCut.Cover 30 24 Candidate.AK3Peak.source S)
+  (stored : ∀ i ≤ 15, ∀ j ≤ 24, ∀ (u : Verify.AtomicSemantics.WordState), A i u → S j u → False)
+  (outer :
+    ∀ (u : Verify.AtomicSemantics.WordState),
+      A 15 u →
+        ∀ (m : Verify.AtomicSemantics.Move),
+          Candidate.AK3Peak.total (Verify.AtomicSemantics.wordStep m u) ≤ 30 →
+            ∀ j ≤ 24, S j (Verify.AtomicSemantics.wordStep m u) → False) :
+  Candidate.AK3Peak.FixedS.OrdinaryCut 30 16 24
+'Candidate.AK3Peak.FixedS.StreamCut.cap30_from_saved_layers' depends on axioms: [propext, Quot.sound]
+Candidate.AK3Peak.FixedS.LayerPilot.coverA :
+  Candidate.AK3Peak.FixedS.StreamCut.Cover 30 2 Candidate.AK3Peak.ak3
+    (Candidate.AK3Peak.FixedS.LayerChecks.members Candidate.AK3Peak.FixedS.LayerPilot.rowsA)
+'Candidate.AK3Peak.FixedS.LayerPilot.coverA' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.LayerPilot.coverS :
+  Candidate.AK3Peak.FixedS.StreamCut.Cover 30 3 Candidate.AK3Peak.source
+    (Candidate.AK3Peak.FixedS.LayerChecks.members Candidate.AK3Peak.FixedS.LayerPilot.rowsS)
+'Candidate.AK3Peak.FixedS.LayerPilot.coverS' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.through25_ok :
+  Candidate.AK3Peak.FixedS.through25.length = 41 ∧
+    Candidate.AK3Peak.Witness 25 Candidate.AK3Peak.ak3 Candidate.AK3Peak.source Candidate.AK3Peak.FixedS.through25 ∧
+      Candidate.AK3Peak.peak Candidate.AK3Peak.FixedS.through25 Candidate.AK3Peak.ak3 = 25 ∧
+        Candidate.AK3Peak.FixedS.avoids Candidate.AK3Peak.FixedS.through25 Candidate.AK3Peak.ak3 = false
+'Candidate.AK3Peak.FixedS.through25_ok' depends on axioms: [propext, Classical.choice, Quot.sound]
+Candidate.AK3Peak.FixedS.through25_move35 :
+  (List.take 34 Candidate.AK3Peak.FixedS.through25).length = 34 ∧
+    Verify.AtomicSemantics.wordRun (List.take 34 Candidate.AK3Peak.FixedS.through25) Candidate.AK3Peak.ak3 =
+        Candidate.AK3Peak.FixedS.U ∧
+      Candidate.AK3Peak.FixedS.through25[34]? = some Verify.AtomicSemantics.Move.m4 ∧
+        Verify.AtomicSemantics.wordStep Verify.AtomicSemantics.Move.m4 Candidate.AK3Peak.FixedS.U =
+          Candidate.AK3Peak.FixedS.V
+'Candidate.AK3Peak.FixedS.through25_move35' depends on axioms: [propext, Classical.choice, Quot.sound]

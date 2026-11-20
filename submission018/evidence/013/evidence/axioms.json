@@ -1,0 +1,185 @@
+{
+  "Candidate.AK3Peak.FixedS.BankSound.to_compact": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.CompactSound.deleted_of_check": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.CompactSound.ordinary_of_check": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.LayerPilot.coverA": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.LayerPilot.coverS": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.StreamCut.cap30_from_saved_layers": [
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.approach_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.arms_agree": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.at_least_106036_paths": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.at_least_34624_peak29": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.back22_inverse": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.back22_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.back23_inverse": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.back23_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.back25_inverse": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.back25_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.both_branches": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.bypass22_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.bypass23_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.bypass25_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.cap30_at_least_24": [
+    "Candidate.AK3Peak.FixedS.cap30_r8_r15._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.compulsory_through_43": [
+    "Candidate.AK3Peak.FixedS.cap22_r17_r26._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.distance_table_of_cuts": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.exact22_deleted": [
+    "Candidate.AK3Peak.FixedS.cap22_r17_r26._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.exact22_to24": [
+    "Candidate.AK3Peak.FixedS.cap24_r15_r26._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.exact23_to24_deleted": [
+    "Candidate.AK3Peak.FixedS.cap24_r15_r26._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.exact25_to26": [
+    "Candidate.AK3Peak.FixedS.cap26_r16_r24._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.forty_requires_27": [
+    "Candidate.AK3Peak.FixedS.cap26_r16_r24._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.forty_requires_31_of_cut": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.low_excursions": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.paired_34624": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.reachable_in_41_iff": [
+    "Candidate.AK3Peak.FixedS.cap24_r15_r26._native.decide.ax_1_1",
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.recorded_counts": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.simple_six": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.simple_ten": [
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.through25_move35": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.through25_ok": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "Candidate.AK3Peak.FixedS.through30_of_last_cut": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

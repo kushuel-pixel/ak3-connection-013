@@ -1,0 +1,273 @@
+{
+  "distance": 41,
+  "through_old_bottleneck": 36960,
+  "states": 159,
+  "edges": 295,
+  "paths": 106036,
+  "paths_at_most_peak28": 71412,
+  "paths_exact_peak29": 34624,
+  "states_at_length29": 1,
+  "midpoint_paths": [
+    {
+      "state": [
+        "XYYYxyyyy",
+        "YXYxyyx"
+      ],
+      "paths": 81150
+    },
+    {
+      "state": [
+        "YYYYXyyyx",
+        "YYXYxyyxy"
+      ],
+      "paths": 24886
+    }
+  ],
+  "forced": [
+    {
+      "depth": 0,
+      "state": [
+        "xyxYXY",
+        "xxxYYYY"
+      ]
+    },
+    {
+      "depth": 1,
+      "state": [
+        "yxYXYx",
+        "xxxYYYY"
+      ]
+    },
+    {
+      "depth": 2,
+      "state": [
+        "xYXYxy",
+        "xxxYYYY"
+      ]
+    },
+    {
+      "depth": 41,
+      "state": [
+        "XyyyxYYYY",
+        "xxYYYYYXyyyyy"
+      ]
+    }
+  ],
+  "witness": {
+    "peak": 29,
+    "steps": 41,
+    "moves": [
+      7,
+      9,
+      3,
+      7,
+      4,
+      11,
+      2,
+      11,
+      2,
+      0,
+      8,
+      11,
+      5,
+      12,
+      12,
+      12,
+      12,
+      5,
+      6,
+      12,
+      10,
+      4,
+      12,
+      5,
+      11,
+      12,
+      5,
+      11,
+      12,
+      10,
+      4,
+      9,
+      9,
+      12,
+      4,
+      8,
+      8,
+      8,
+      8,
+      8,
+      7
+    ],
+    "states": [
+      [
+        "xyxYXY",
+        "xxxYYYY"
+      ],
+      [
+        "yxYXYx",
+        "xxxYYYY"
+      ],
+      [
+        "xYXYxy",
+        "xxxYYYY"
+      ],
+      [
+        "xYXYxyyyyyXXX",
+        "xxxYYYY"
+      ],
+      [
+        "YXYxyyyyyXX",
+        "xxxYYYY"
+      ],
+      [
+        "YXYxyyyyyXX",
+        "xxxYYYYYXYxyyyyyXX"
+      ],
+      [
+        "YXYxyyyyyXX",
+        "xxYYYYYXYxyyyyyX"
+      ],
+      [
+        "YXYYxyyyyyX",
+        "xxYYYYYXYxyyyyyX"
+      ],
+      [
+        "YXYYxyyyyyX",
+        "xYYYYYXYxyyyyy"
+      ],
+      [
+        "YXYYYxyyyyy",
+        "xYYYYYXYxyyyyy"
+      ],
+      [
+        "YYYYYXyyyxy",
+        "xYYYYYXYxyyyyy"
+      ],
+      [
+        "YYYYXyyyx",
+        "xYYYYYXYxyyyyy"
+      ],
+      [
+        "YYYYXyyyx",
+        "YYYYYXYxyyyyyx"
+      ],
+      [
+        "YYYYXyyyx",
+        "YYYYYXYxyyxyyyy"
+      ],
+      [
+        "YYYYXyyyx",
+        "YYYYXYxyyxyyy"
+      ],
+      [
+        "YYYYXyyyx",
+        "YYYXYxyyxyy"
+      ],
+      [
+        "YYYYXyyyx",
+        "YYXYxyyxy"
+      ],
+      [
+        "YYYYXyyyx",
+        "YXYxyyx"
+      ],
+      [
+        "YYYYXyyyx",
+        "YXYxYxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "YXYxYxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "XYxYxyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxYxyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxYxYXyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYxYXyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYxYXYxyyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxYXYxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYXYxyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xYXYxxyyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YXYxxyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "XYxxyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxxyyyX"
+      ],
+      [
+        "xYYYYXyyy",
+        "YxxYXyyy"
+      ],
+      [
+        "YxYYYYXyyyy",
+        "YxxYXyyy"
+      ],
+      [
+        "YYxYYYYXyyyyy",
+        "YxxYXyyy"
+      ],
+      [
+        "YYxYYYYXyyyyy",
+        "xxYXyy"
+      ],
+      [
+        "YYxYYYYXyyyyy",
+        "xxYYYYYXyyyyy"
+      ],
+      [
+        "YxYYYYXyyyy",
+        "xxYYYYYXyyyyy"
+      ],
+      [
+        "xYYYYXyyy",
+        "xxYYYYYXyyyyy"
+      ],
+      [
+        "yxYYYYXyy",
+        "xxYYYYYXyyyyy"
+      ],
+      [
+        "yyxYYYYXy",
+        "xxYYYYYXyyyyy"
+      ],
+      [
+        "yyyxYYYYX",
+        "xxYYYYYXyyyyy"
+      ],
+      [
+        "XyyyxYYYY",
+        "xxYYYYYXyyyyy"
+      ]
+    ]
+  }
+}

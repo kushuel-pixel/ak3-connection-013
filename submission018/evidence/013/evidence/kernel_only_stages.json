@@ -1,0 +1,102 @@
+[
+  {
+    "name": "FixedSWitness",
+    "exit": 0,
+    "elapsed_s": 1.61
+  },
+  {
+    "name": "FixedSPaths",
+    "exit": 0,
+    "elapsed_s": 4.08
+  },
+  {
+    "name": "ThroughEdge",
+    "exit": 0,
+    "elapsed_s": 1.94
+  },
+  {
+    "name": "FixedSCuts",
+    "exit": 0,
+    "elapsed_s": 1.57
+  },
+  {
+    "name": "FixedSCycles",
+    "exit": 0,
+    "elapsed_s": 1.51
+  },
+  {
+    "name": "PathCount",
+    "exit": 0,
+    "elapsed_s": 1.52
+  },
+  {
+    "name": "RecordedCounts",
+    "exit": 0,
+    "elapsed_s": 17.24
+  },
+  {
+    "name": "CountSemantics",
+    "exit": 0,
+    "elapsed_s": 7.84
+  },
+  {
+    "name": "PairedPaths",
+    "exit": 0,
+    "elapsed_s": 1.36
+  },
+  {
+    "name": "StreamCut",
+    "exit": 0,
+    "elapsed_s": 1.58
+  },
+  {
+    "name": "B5BallEngine",
+    "exit": 0,
+    "elapsed_s": 0.61
+  },
+  {
+    "name": "B5BallSearch",
+    "exit": 0,
+    "elapsed_s": 2.53
+  },
+  {
+    "name": "CompactEngine",
+    "exit": 0,
+    "elapsed_s": 0.39
+  },
+  {
+    "name": "CompactSound",
+    "exit": 0,
+    "elapsed_s": 2.68
+  },
+  {
+    "name": "BankEngine",
+    "exit": 0,
+    "elapsed_s": 0.45
+  },
+  {
+    "name": "BankSound",
+    "exit": 0,
+    "elapsed_s": 1.63
+  },
+  {
+    "name": "LayerChecks",
+    "exit": 0,
+    "elapsed_s": 1.27
+  },
+  {
+    "name": "LayerPilot",
+    "exit": 0,
+    "elapsed_s": 15.3
+  },
+  {
+    "name": "AuditKernel",
+    "exit": 0,
+    "elapsed_s": 3.05
+  },
+  {
+    "name": "module-replay",
+    "exit": 0,
+    "elapsed_s": 62.63
+  }
+]

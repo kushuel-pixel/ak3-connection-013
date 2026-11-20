@@ -1,0 +1,5 @@
+'Candidate.AK3Peak.FixedS.RecordedPeak29.new_at_29_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.AK3Peak.FixedS.RecordedPeak29.all_extra_are_high_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Candidate.AK3Peak.FixedS.RecordedPeak29.low_companion' depends on axioms: [propext, Classical.choice, Quot.sound]
